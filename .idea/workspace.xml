@@ -2,10 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a80cc0b5-fbd0-4627-a7be-96162918c494" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jjf/A4PrintDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jjf/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jjf/A5PrintClassInformations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jjf/A5PrintToFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jjf/classInformations.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/ArrayClone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/Equals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/HasCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/Instanceof.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/Object.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/TextString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/classOfText/GetNmae.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/classOfText/bookforjava.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/methodreference/ConstructeReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/methodreference/MethodReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/methodreference/Test3MethRefe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/methodreference/大总结.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/IntesSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/LambdaTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/Lamdaparent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/MyselfInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/MyselfLambda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/lambda.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/proxy/Proxy1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A4PrintDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A4PrintDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jjf/A4PrintDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jjf/A4PrintDate.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +53,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/Git/cmd/git.exe" />
+    <property name="last_opened_file_path" value="E:/java设计模式/designpatterns" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jjf" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\newIDEA\importanceCode\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.A5PrintToFiles">
     <configuration name="A4PrintDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jjf.A4PrintDate" />
       <module name="importanceCode" />
@@ -61,9 +90,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="A5PrintClassInformations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jjf.A5PrintClassInformations" />
+      <module name="importanceCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jjf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="A5PrintToFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jjf.A5PrintToFiles" />
+      <module name="importanceCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jjf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HasCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="knowledge.HasCode" />
+      <module name="importanceCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="knowledge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.A5PrintToFiles" />
+        <item itemvalue="Application.A5PrintClassInformations" />
         <item itemvalue="Application.A4PrintDate" />
+        <item itemvalue="Application.HasCode" />
       </list>
     </recent_temporary>
   </component>
@@ -78,8 +149,16 @@
       <option name="presentableId" value="Default" />
       <updated>1568162489674</updated>
       <workItem from="1568162493327" duration="7627000" />
-      <workItem from="1568183985538" duration="243000" />
+      <workItem from="1568183985538" duration="10537000" />
     </task>
+    <task id="LOCAL-00001" summary="A4PrintDate:根据日期打印当月的日历">
+      <created>1568184370598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568184370598</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,5 +176,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="A4PrintDate:根据日期打印当月的日历" />
+    <option name="LAST_COMMIT_MESSAGE" value="A4PrintDate:根据日期打印当月的日历" />
   </component>
 </project>

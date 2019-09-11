@@ -1,0 +1,69 @@
+Object的真正用法：
+    1. 对于声明为Object类型的变量，在使用之前，一定要为其赋值，不然没赋值之前使用它会：
+        局部变量：编译不通过（但作为Object[]数组元素的Object类型变量objects[i]则自动赋予null）
+        类的域：运行时出现异常：NullPointerException。(如果没有显示转换就不会出现异常)
+
+    2. 当为声明为Object类型的变量赋值，则，该变量在此过程中可以任意的指向其他不同类型的值，而不发生任何异常。
+        只需要注意在使用其实际类型时要显示转化。
+
+    *3. 对于 Object[] objects; 即将objects声明为 Object[] 类型，虽然此时objects[i]的类型是Object。但是：
+        一旦为objects赋值，即确定了objects的实际数组类型，则objects[i]只能转化或赋值为objects所对应的
+        数组元素的类型。即此时的objects[i]是Object类型的变量，但却只能指向objects当前指向的数组
+        类型所对应的元素。
+        这就是objects[i] 与 object 的重要区别。（Object[] objects; Object object)。
+        也就是说，对objects[i] 的使用必须先确定objects的指向类型。
+
+    4. 声明为Object类型的变量可以直接指向基本数据类型（此时基本数据类型不用写为其对象类型的形式）。此时对该Object类型
+        变量的使用，就是基本数据类型的值，而不用对该Object类型的变量先显示转化，这也是Object类型的变量在使用时不用显示
+        转化的唯一例外。
+        同时需要注意，不用将Object[] objects 指向 int[]，即Object[] objects = new int[] 为错误用法
+
+    5.注意区别下面java语句：
+        Object[] objects = new Object[5];
+            |--->表示声明了一个包含5个元素的Object类型的数组：
+                此时在堆空间中由五个Object类型的变量，分别为
+                objects[0]，objects[1]，objects[2]，objects[3]，objects[4]。
+                但与
+                    Object object;
+                不同的是，虽然object和objects[i]都是object类型的变量，但局部的object必须显示赋值，而
+                局部的objects[i]不用显示赋值。如果是全局的，他们基本一样。
+
+        此时对objects元素的第一次赋值有两种可能：注意是第一次！！！
+            1. 使用 objects = 另一个数组类型的变量（由第4点可知，此时的另一个数组类型的变量不能是基本类型数组）
+            2. 逐一的为每个objects元素赋值：即objects[i] = 任意类型的数据.
+            注意：这两种情况是由区别的，
+                  1. 如果是第一种情况，objects[i]的值都与objects的实际类型有关，且不能再通过
+                     objects[i] = 任意类型的数据 ，将objects[i] 的类型改为其他不兼容的类型，
+                     只有原类型和其子类才能兼容！要想改变objects[i]的类型（其他不兼容的类型）
+                     只能再次通过 objects = 其他不兼容的数组类型（同样不能是基本类型数组），这也是
+                     第3点的总结。
+                     同时，如果是这一种情况，为了节省内存，应该使用下面语句：
+                     Objects[] objects;
+                     替换：Object[] objects = new Object[5];
+
+                  2. 如果是第二种情况，则可以再次任意的修改修改objects[i]的值，即不用考虑兼容问题,例如：
+                     objects[0] = 2; objects[1] = new SomeClass; objects[2] = new Random(); .....
+                     但需要注意的是
+                     只要再后面的修改之前，有语句： objects = 另一个数组类型的变量，则此时objects[i]的用法又会再
+                     次成为第一种情况是的那样，即对objects[i]的再赋值又要考虑兼容性。
+                     但解决办法是：objects = new Object[n];此时相当于重载了objects，即以前的objects[i]的数据会丢失。
+
+
+    总结：之所以出现Object[] objects 的元素 objects[i] 与 Object object类型的差别，
+            其表面是是new的原因:
+                  即：
+                        Object[] objects1 = new OthersClass[n]; //objects1数组元素的实际类型为OthersClass类类型
+                        Object[] objects2 = new Object[n]; //objects2数组元素的实际类型为Object类型
+                        Object object;
+                  中：
+                        objects1[i]
+                        objects2[i]
+                        object
+                  三个都是Object类型的变量，只有object2[i] <==> object， 因为new运算符会绑定变量的实际类型。
+
+            其内在原因是:java数组元素的机制受java数组的实现机制的影响。即只要确定了数组指向的实际类型，数组元素的
+                          的的操作就被确定（如：元素的内存就已经定了）。
+
+
+
+

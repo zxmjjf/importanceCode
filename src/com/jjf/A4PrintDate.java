@@ -11,8 +11,8 @@ import java.time.LocalDate;
 public class A4PrintDate {
     public static void main(String[] args) {
         //获取当前时间
-        //LocalDate localDate = LocalDate.now();
-        LocalDate localDate = LocalDate.of(2019, 9, 1);
+        LocalDate localDate = LocalDate.now();
+        //LocalDate localDate = LocalDate.of(2019, 9, 1);
         int month = localDate.getMonthValue();
         int today = localDate.getDayOfMonth();
         System.out.println("************* " + localDate.toString() + " **************");
@@ -27,6 +27,7 @@ public class A4PrintDate {
                 System.out.print("      "); //找到第一个日期的位置
             }
         }
+        /*打印当月所有日期*/
         while (localDate.getMonthValue() == month) {
             System.out.printf("%3d", localDate.getDayOfMonth()); //打印时间
             if (localDate.getDayOfMonth() == today) {
@@ -39,6 +40,7 @@ public class A4PrintDate {
                 System.out.println();
             }
         }
+
         System.out.println("\n**************************************");
         if (localDate.getDayOfWeek().getValue() != 7) {
             System.out.println();
