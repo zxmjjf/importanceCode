@@ -5,7 +5,7 @@ import java.util.Objects;
 
 /**
  * 测试Object类的 euqals()方法的实现原理
- * @author  jjf
+ * @author  book1
  * @version 1.0.1  2019-07-16
  *
  * 结论：
@@ -41,10 +41,10 @@ public class Equals {
     }
 
     public static void main(String[] args) {
-        Equals equals1 = new Equals("jjf", 02);
-        Equals equals2 = new Equals("jjf", 02);
-        String string1 = new String("jjf");
-        String string2 = new String("jjf");
+        Equals equals1 = new Equals("book1", 02);
+        Equals equals2 = new Equals("book1", 02);
+        String string1 = new String("book1");
+        String string2 = new String("book1");
         int[] arrint1 = {1, 2, 3};
         int[] arrint2 = {1, 2, 3};
         Integer a = new Integer(3);

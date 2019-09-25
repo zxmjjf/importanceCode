@@ -1,0 +1,13 @@
+public abstract class java.util.logging.Formatter{
+	//数据域
+
+	//构造方法
+	protected Formatter();
+
+	//方法
+	public abstract String format(LogRecord);
+	public String getHead(Handler);
+	public String getTail(Handler);
+	public String formatMessage(LogRecord);
+}
+

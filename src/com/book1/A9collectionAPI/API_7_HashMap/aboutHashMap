@@ -1,0 +1,80 @@
+同步方法：Map m = Collections.synchronizedMap(new HashMap(...));
+**************************************************************************************
+难理解的方法：
+1.compute(K key, BiFunction<? super K,? super V,? extends V> remappingFunction)
+    BiFunction<? super K,? super V,? extends V> 是一个函数式接口，但还有一个默认方法，所以这个方法也使用了一个
+    类型参数，抽象方法只有两个类型参数。
+    用法：map.compute(key ,(k, v) -> do for (k, V) ); 注意 k = key, v = map.get(key);
+    伪代码解析：
+        v = map.get(k);
+        returnValue = 计算lambda表达式的返回值;
+        map.put(k, returnValue); //如果return的值为空，相当于删除该键，return语句为null;
+        return map.get(k);
+
+ (查看代码：HashMapOfMethod.java 中 testCompute方法）
+
+2.computeIfAbsent(K key, Function<? super K,? extends V> mappingFunction)
+     Function<? super K,? extends V> 是一个具有4个方法，其中含有3个函数式接口，1个抽象方法的函数式接口，
+     但函数式接口只需接受一个参数，这个参数的实参来自computeIfAbsent方法的第一个实参。例如：
+     map.computeIfAbsent(key, k -> new Value(f(k)));
+     其功能是，如果键 key 对应的值不存在或者为null，则将lambda表达式的返回值绑定到键 key 身上
+     用法：map.computIfAbsent(key ,k -> do for k); 注意 k = key
+     伪代码解析：
+         if(map.get(k) == null){
+              returnValue = lambda表达式的返回值；
+              return map.put(k, returnValue)
+         } else{
+              return map.get(k);
+         }
+
+
+3. computeIfPresent(K key, BiFunction<? super K,? super V,? extends V> remappingFunction)
+    用法：map.computIfPresent(key , k -> do for k); 注意 k = key
+    伪代码解析：
+         if(map.get(k) != null){
+              returnValue = lambda表达式的返回值；
+              return map.put(k, returnValue)
+         } else{
+              return map.get(k);
+         }
+
+V merge(K key, V value, BiFunction<? super V,? super V,? extends V> remappingFunction)
+如果指定的键尚未与值相关联或与null相关联，则将其与给定的非空值相关联。
+否则，将 k 与后面的 lambda 表达式的返回值相关联。
+和compute类似：但在使用lambda表达式时，函数式接口的两个参数表示不同的含义
+用法：map.merge(key, value, (v1, v2) -> do for (v1, v2) ); 注意：v1=map.get(k), v2=value;
+伪代码解析：
+    if(map.get(k) == null){
+        return map.put(k, value);
+    } else {
+        returnValue = 计算lambda表达式的返回值。
+        return map.put(k, returnValue);
+    }
+
+总结：compute方法的功能最为强大，将compute专一化之后就变成computeIfAbsent或computeIfPresent。
+注意函数式接口中的 k 形参的实参在compute内部都用compute的第一个形参来代替。
+BigFunction函数式接口的lambda表达式需要接受来个参数
+Function函数式接口的lambda表示需要接受一个参数
+同时要了解函数是接口的实际参数是由外层方法如何提供的
+****************************************************************************************************
+void forEach(BiConsumer<? super K,? super V> action)
+对此映射中的 每个键值对 执行给定的操作，直到 所有键值对 都被 处理 或 操作引发异常。
+每个 键值对 执行的顺序是 迭代器iterator 的 next() 顺序。
+用法：map.forEach((k, v) -> do for (k, v));  (k, v) 的值通过迭代器获得。
+
+
+Set<Map.Entry<K,V>> entrySet()
+返回此地图中包含的映射的Set视图。
+
+
+V putIfAbsent(K key, V value)
+如果指定的键尚未与某个值相关联（或映射到 null ），则将其与给定值相关联并返回 null ，否则返回当前值。
+伪代码解析：
+    if(map.get(k) == null){
+        return map.put(k, value);
+    } else {
+        return map.get(k);
+    }
+
+void replaceAll(BiFunction<? super K,? super V,? extends V> function)
+将每个条目的值替换为对该条目调用给定函数的结果，直到所有条目都被处理或该函数抛出异常。

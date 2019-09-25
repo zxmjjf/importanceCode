@@ -1,0 +1,34 @@
+1. 由于文本文件是以字符的格式存储数据，而不是以字节的格式存储数据。
+2. FileInputStream能够将文本数据识别为字节而读取。在需要读取的时候读取。
+3. DataInputStream能够读取底层流的的字节数据，即将底层流所能读取的字节转换为相应的字符。
+4. BufferedInputStream是底层字节流的数据块缓冲区，即会读取固定大小的数据缓冲块，以便后续数据的提供。
+输入流的基本架构：
+1. 如果只需读取文件资源的字节形式的数据：
+FileInputStream fileInput = new FileInputStream(...);
+或者：BufferedInputStream buffered = new BufferedInputStream(fileInput);
+2.如果需要读取文件的字符型数据：
+DataInputStream dataInput = new DataInputStream(fileInput);
+或者：DataInputStream dataInput = new DataInputStream(buffered);
+3.处理字节数据时：坚持一个原则，把数据存入文件，存了什么类型就去什么类型，在字符串开头是由特殊标记的。一个。
+***************************************************************************************************
+以字节格式处理文件数据的基本框架：
+1. 如果只有字节byte资源：
+从文件中输入（读取）：FileInputStream fileInput = new FileInputStream(....);
+输出（存储）到文件中：FileOutputStream fileOutput = new FileOutputStream(....);
+提高效率的方式：
+    BufferedInputStream bufferedIn = new BufferedInputStream(fileInput);
+    BufferedOutputStream bufferedOut = new BufferedOutputStream(fileOutput);
+2. 将文本格式数据以字节格式方式处理：
+从文件中输入（读取）：DataInputStream dataInput = new DataInputStream(fileInput);
+输出（存储）到文件中：DataOutputStream dataOutput = new DataOutputStream(fileOutput);
+提高效率的方式：
+    DataInputStream dataInput = new DataInputStream(bufferedIn);
+    DataOutputStream dataOutput = new DataOutputStream(bufferedOut);
+
+或者组合更加复杂的流。
+
+*********************************************************************************************
+以文本方式处理文件数据的基本框架：
+1. 将小文本转化为String
+
+

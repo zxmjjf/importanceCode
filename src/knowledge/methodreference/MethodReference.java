@@ -1,7 +1,7 @@
 package knowledge.methodreference;
 
 /**
- * @author jjf 2019-07-27
+ * @author book1 2019-07-27
  * @version 1.0.1
  * 描述：测试方法引用的三种情况
  */

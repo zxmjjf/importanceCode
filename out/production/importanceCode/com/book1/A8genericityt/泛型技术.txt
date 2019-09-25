@@ -1,0 +1,104 @@
+类型参数：泛型的核心，在定义的时候传递的参数类型
+1. 用于集合：控制集合存储的元素类型，主要为了提高程序的可读性，降低程序的bug，如：ArrayList<T>
+2. 设计模式：抽象工厂模式，具体工厂为了创建特定的产品，产品类型作为类类型参数，可以不用对产品强制类型转换
+3. 在庞大的类继承机制中，泛型设计至关重要，泛型类和泛型方法都随处可见
+
+泛型特性：
+1. 构造函数中可以省略类型参数
+2. 泛型类：具有一个或多个类型变量的类
+3. 类型参数的表示习惯：
+        E  --> 集合框架中的元素类型
+        K,V --> 映射的 键值 对
+        T,U,S ---> 任意类型
+4. 泛型方法：类型参数位于修饰符之后，方法返回类型之前，调用时在方法名之前确认类型参数的实际类型。-
+5. 类型参数可以有多个限定类型，不同类或接口之间用'&'连接。第一个限定作为类型参数擦除类型，且类必须唯一且在第一个。
+6. 泛型只存在与编译器阶段，经过编译之后，泛型类型被擦除，java虚拟机没有泛型类型
+7*. 泛型的核心是编译器在需要的地方自动插入类型转换
+8*. 编译器将泛型擦除之后会在方法调用存在冲突的地方生产桥方法，以支持多态性。
+9. 忽视某个方法出现语法警告的注解： @SuppressWarnings("nuchecked")。方法某个会产生警告的方法之前。
+10. 类型参数不能用基本类型实例化。
+11*. 对泛型的类型检查如：instanceof or getClass() 结果都为原始类型（是没有泛型，不是泛型类型擦除之后的类型）
+    且 instancof SomeClass<类型> 都是错误语法
+       SomeClass<类型>.clas 也是错误语法
+12*. 不能创建泛型数组，但可以声明泛型数组变量。
+    原因是： 如果：SomeClass<AType>[] As = new SomeClass<AType>[10]
+            则  As 中每个元素的大小都确定了，但 SomeClass<AType> 的大小不等于 SomeClass<BType> 的大小
+            而对SomeClass<T> 类型擦除之后，允许如下赋值：
+            As[index] = new SomeClass<BType>();
+            在以后使用As[index]时会抛出ClassCastException异常；
+            所以存在bug！！！
+13*. 不能直接实例化类型变量：new T(object... args),
+可以使用反射机制的技术实例化泛型变量
+public static <T extends SomeClass> T makeT(Class<T> tClass, Object... args){
+        // .....
+        try {
+            return (T)tClass.getDeclaredConstructor(Class<Others>... class).newInstance(args[0],...);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+            return null;
+        } catch (InstantiationException e1) {
+            e1.printStackTrace();
+            return null;
+        } catch (NoSuchMethodException e4) {
+            e4.printStackTrace();
+            return null;
+        } catch (InvocationTargetException e3) {
+            e3.printStackTrace();
+            return null;
+        }
+    }
+
+14*. 泛型方法可极大避免在复杂类库继承系统中时的强制类型转换，代码如下：
+public <T extends ParentClass> T getSomeClass() {
+        // .....
+        return (T)new ChildClass();
+    }
+// getSomeClass()最先定义在接口，抽象类，父类中，且有不同的子类覆盖该方法获得不同的实例
+
+15*. 泛型类中，被static修饰的方法法不能出现泛型，泛型变量也不能用static修饰。泛型方法可以用static修饰。
+16. 泛型类不能继承所有异常类，泛型类或泛型方法中的泛型变量可以继承异常类（异常类也可以作为类型变量的限定）。
+17. 不能 抛出或捕获 泛型类的实例，但可以抛出继承了异常类的类型变量（同样包括异常类作为类型变量的限定），但
+不可以捕获任何泛型变量。抛出泛型变量异常的的功能之一可以消除对受查异常的检查：先捕获受查异常，在抛出非受查异常
+（需要在方法头添加警告注解）。
+18. 泛型接口的特殊强制限定：一个类不能在实现一个泛型接口的同时又继承一个类，而这个父类也实现了这个泛型接口。
+19. SomeClass<Parent> some =  new SomeClass<Child> // error
+尽管：Parent cla = new Child(); //ok
+20. 如果：Child<T> extends Parent<T>;
+    则 Child<A> 可以转化只能转化为 Parent<A>, 一律不能转化为 Parent<NotA>
+    而 Parent<A> 没办法转化为 Child<All>
+
+
+通配符特性：
+extends限定：SomeClass<? extends Parent>
+1. SomeClass<? extends Parent> 中 ？extends Parent 是一个“不存在”的“具体”的数据类型, 类似于匿名类，不是一个抽象的参数类型。
+这个具体的数据类型应该这样理解：
+    a) 表示 Parent 某个匿名子类，犹如lambda表达式中的实现函数式接口的匿名类一样，确实是一个类，但没办法知道
+    它是一个怎样的类，而和匿名类不一样的是，它不是完全具体的，还是有抽象的概念。
+    b）SomeClass<？extends Parent> 是 SomeClass<Parent> 和SomeClass<Child> 的父类型，是 SomeClass的子类型
+    c）? extends Parent 是 Parent 的子类，但与Parent的其他任何子类任何关系。所以如下任何赋值都是错误的：
+        ？extends Parent的实例 = Parent的实例 //父类不能转化为子类
+        ？extends Parent的实例 = Child的实例  //子类之间无任何关系
+    d) ? extends Parent 不能单独存在，必须与SomeClass<? extends Parent>一起使用作为一种数据类型使用。
+    e) 综合c），d）两点没办法创建SomeClass<? extends Parent>的真正实例，只能利用b）所述，将其作为引用变量的类型。
+2. 所以在SomeClass<T>, 如果SomeClass<? extends Parent> 作为某个SomeClass<T>的引用类型时，SomeClass<T> 中
+有T类型 型参的所有方法都不得使用！
+
+super限定：SomeClass<? super Child1>
+1. 和SomeClass<? extends Parent>一样，SomeClass<? super Child1> 也是一个“不存在”的“具体”的数据类型，
+不是一个抽象的参数类型。
+2. SomeClass<? super Child1> 是 SomeClass<AllParent>,SomeClass<Object>，和SomeClass<Child1>的父类，
+是 SomeClass<?> 的子类型。和SomeClass<Child2> 没关系。
+3. SomeClass<? super Child1>应分为两部分：
+   a）与SomeClass<? extends Parent>类似，其只能作为引用变量的类型，没办法直接新建直接的实例。且只能引用其
+   子类类型：SomeClass<AllParent>，SomeClass<Object>，和SomeClass<Child1>。
+   b）在使用这个引用变量时：如果引用变量内部的方法的返回类型是泛型参数，则返回类型为Object类型，如果内部的方法
+   的形式参数是泛型参数，则显示参数只能是Child1类型的变量，或者Child1类型的子类的变量。
+4. 超类限定主要用于作为某个方法的形参！
+
+总结：通配符数据类型作为引用变量的引用类型，以及函数的形参类型。该引用变量的功能就被限定。
+如果通配符作为函数的形参类型，则首先就限制类实参的类型，限制由通配符的限定决定（extends，super，或无限定）
+之后再引用变量或形参时，还要考虑该变量实例：当其内部的方法返回类型是泛型参数or形参类型是泛型参数时，不同的通配符限定
+会有不同的限制！再则，通配符类型不能直接实例化变量。
+
+
+

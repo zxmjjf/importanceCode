@@ -1,0 +1,75 @@
+1. 获得日志记录器
+Logger logger = Logger.getLogger("com.book1.logger");
+如果需要本地化，可以再此方法中加入本地资源处理器
+***************************************************************************************************
+2. 考虑日志处理器
+日志记录会发送到日志处理器中：可以发送到多个处理器和父处理器中。最终的处理器是默认的底层处理器，名为：""
+API中的三种处理器：
+1. FileHandler:
+    FileHandler() :构造默认值 FileHandler。
+    FileHandler(String pattern) : 初始化 FileHandler以写入给定的文件名。
+    FileHandler(String pattern, boolean append): 初始化 FileHandler以写入给定的文件名pattern，append参数表示，是否在文件尾部追加，默认值为false。
+    FileHandler(String pattern, int limit, int count): 初始化 FileHandler以写入一组文件。count参数为一组文件的数目，由以第一个文件名为基础，加.在需要的时候创建新的文件
+    limit参数是文件允许的最大字节数。
+    FileHandler(String pattern, int limit, int count, boolean append): 初始化 FileHandler以写入一组可选附加的文件。
+2.  ConsoleHandler
+    ConsoleHandler(): 创建一个 System.err.ConsoleHandler。
+
+3.
+***************************************************************************************************
+3. 考虑日志处理的处理格式：格式化器 -> 如何表现收集的记录
+一般有三种格式处理器：
+1. SimpleFormatter simpleFormatter = new SimpleFormatter(); // 文本文件格式
+
+2. XMLFormatter xMLFormatter = new XMLFormatter(); //xml文件形式，这个是默认的
+
+3. 自定义的格式化器：实现 java.util.logging.Formatter 抽象类的格式化处理器
+    @Override
+    public String format(LogRecord record) {
+        //....
+        //....
+        return "logger informations"
+    }
+********************************************************************************
+4. 过滤器：java.util.logging.Filter
+要为处理器设置过滤器需要调用 处理器的setFilter(Filter)方法；
+Filter函数式接口有一个方法。
+    @Override
+    public boolean isLoggable(LogRecord logRecord) {
+        //根据参数logRrcord的记录，进行过滤。
+        //过滤的范围是再处理器能过接受的记录等级之内
+    }
+
+*********************************************************************************
+5. 配置日志处理器
+即FileHandle对象或ConsoleHandle对象的方法
+setFormatter(): 设置记录的格式
+setFilter(): 设置过滤器，首先得新建对应的过滤器
+setLevel(): 设置记录等级阈值
+setEncoding()：更改目的文件的字符编码
+
+考虑是否取消父级处理器：logger.setUseParentHandler(false)
+最后将处理配置到日志记录器中：logger.addHandler(handler)
+*********************************************************************************
+6. 在使用日志时，为记录选择合适的级别
+logger.log(Level.INFO, mesage);
+或者
+loger.info(mesage); //小写
+注意logger.log()方法可以接收异常对象,即打印异常信息。
+而且，这两种方法的有用参数都会被包装成 LogReCord 对象，所以再自定义格式化器中，必须了解format形参的LogRecord对象的用法
+
+Level.xxx
+SEVERE: 是指示严重故障的消息级别。
+WARNING: 是指示潜在问题的消息级别。
+INFO: 是信息性消息的消息级别。
+CONFIG：是静态配置消息的消息级别。
+FINE:是提供跟踪信息的消息级别。
+FINER: 表示相当详细的跟踪消息。
+FINEST: 表示高度详细的跟踪消息。
+OFF是可用于关闭日志记录的特殊级别。
+ALL: 表示所有消息都应该被记录。
+
+此外还有两个等级为FINER的方法。
+exiting();
+entering();
+

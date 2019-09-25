@@ -1,32 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Packjar1:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a80cc0b5-fbd0-4627-a7be-96162918c494" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/jjf/A5PrintClassInformations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jjf/A5PrintToFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jjf/classInformations.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/ArrayClone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/Equals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/HasCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/Instanceof.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/Object.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/TextString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/classOfText/GetNmae.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/classOfText/bookforjava.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/methodreference/ConstructeReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/methodreference/MethodReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/methodreference/Test3MethRefe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/methodreference/大总结.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/IntesSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/LambdaTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/Lamdaparent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/MyselfInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/MyselfLambda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/lambda.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/proxy/Proxy1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A9collectionAPI/API_3_LinkedLIst/Stack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A9collectionAPI/API_4_HashSet/HashSetOfMethodTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A9collectionAPI/API_5_TreeSet/TreeSetOfMethodTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A9collectionAPI/API_6_PriorityQueue/PriorityQueueOfMethodTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/collectionAPI/API_1_Vector/VectorOfMethodTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/collectionAPI/API_3_LinkedLIst/LinkedListOfMethodTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/junkCode/Test1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/ArrayClone.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Child1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Child2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Child2_1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/ClassA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Equals.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/HasCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Instanceof.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Myclass1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Object.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Parent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/TextString.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/classOfText/Child.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/classOfText/GetNmae.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/classOfText/Parent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/classOfText/bookforjava.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/ConstructeInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/ConstructeReference$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/ConstructeReference.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/MethodReference.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Myclass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test1Interface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test3Interface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test3MethRefe$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test3MethRefe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/大总结.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/A.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/B.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/C.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/IntesSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/LambdaTest1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/Lamdaparent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/MyselfInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/MyselfLambda.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/lambda.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/proxy/MyClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/proxy/Proxy1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/proxy/TraceHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B1_jar/PackJar1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B1_jar/Packjar1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B1_jar/Packjar2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/PropertyTable1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/PropertyTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/usage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B3_preferredAPI/usage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B4_serviceLoad/serviceLoad.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API_testprogram/A01Thread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API_testprogram/A02Thread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API_testprogram/A03Thread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API_testprogram/JoinAddJoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API_testprogram/测试总结" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge_testprogram/A01Intrrupted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge_testprogram/A02Intrrupted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge_testprogram/A03waitStatue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge_testprogram/A04ThreadLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge_testprogram/A05LockAndInterrput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A_chaptor14_帮助文档.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/codeforbook/A01UnsynchBank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/codeforbook/A02SynchBank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A3/A3_1_StringBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A3/A3_2_Paths.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A3/A3_2_PathsAndScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A5_1ArrayCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A6_0Lambda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A6_0lambda表达式总结.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A6proxy/A6Proxy.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A6proxy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A6proxy/MyInvocationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A6proxy/RealSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A6proxy/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A7Assert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A7logger/MyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A7logger/MyFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A7logger/fiter.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A7logger/logger用法.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A8genericityt/CreateArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A8genericityt/泛型技术.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/0视图.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_10_LinkedHashSet/LinkHashSet.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_10_LinkedHashSet/TestLinkedHashSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_1_Vector/VectorOfMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_1_Vector/aboutVecotr.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_2_ArrayList/TestArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_2_ArrayList/aboutArrayList.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_3_ArrayDeque/aboutArrayDeque.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_3_LinkedLIst/LinkedListOfMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_3_LinkedLIst/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_3_LinkedLIst/aboutLinkedList.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_4_HashSet/HashSetOfMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_4_HashSet/aboutHashSet.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_5_TreeSet/TreeSetOfMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_5_TreeSet/aboutTreeSet.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_6_PriorityQueue/PriorityQueueOfMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_6_PriorityQueue/aboutPriorityQueue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_7_HashMap/HashMapOfMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_7_HashMap/TestCollections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_7_HashMap/aboutHashMap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_8_TreeMap/SortedMapToTreeMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_8_TreeMap/TreeMapOfMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_8_TreeMap/aboutTreeMap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_9_WeakHashMap/TestWeakHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_9_WeakHashMap/aboutWeakHashMap.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/SynchronizedView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/classInformations.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B01_FileToString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B02_FilesLineToStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B03_Stream_peek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B04_Stream_toArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B05_Stream_reduce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B06_Stream_sorted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B07_Stream_collect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B08_IntStream_range.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B09_IntStream_codePoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B10_Random_ints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B11_Stream_unordered.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/FileObject.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/_CollectorsAPI.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/_StreamOfUse.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B01_FileInputAndOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B02_DataInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/_FileDataProcessing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junkCode/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/knowledge/ByteToOtherBaseData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A4PrintDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A4PrintDate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jjf/A4PrintDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jjf/A4PrintDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A4PrintDate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jjf/A4PrintDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book1/A4PrintDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jjf/A5PrintClassInformations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book1/A5PrintClassInformations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jjf/A5PrintToFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book1/A5PrintClassToFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jjf/classInformations.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jjf/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/knowledge/ArrayClone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/ArrayClone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/knowledge/Equals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/Equals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/knowledge/HasCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/HasCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/knowledge/classOfText/GetNmae.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/classOfText/GetNmae.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/knowledge/methodreference/ConstructeReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/methodreference/ConstructeReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/knowledge/methodreference/MethodReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/methodreference/MethodReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/knowledge/methodreference/大总结.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/methodreference/大总结.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/knowledge/myselfLamda/LambdaTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/LambdaTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/knowledge/proxy/Proxy1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/proxy/Proxy1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,9 +170,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="importanceCode" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -53,15 +207,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/java设计模式/designpatterns" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text3.txt" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\newIDEA\importanceCode\src\com\jjf" />
+      <recent name="E:\newIDEA\importanceCode\src\com\jjf\A7logger" />
+      <recent name="E:\newIDEA\importanceCode\src" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jjf" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\newIDEA\importanceCode\src" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\newIDEA\importanceCode\src\com\jjf\A13Java_deploy\jar" />
+      <recent name="E:\newIDEA\importanceCode\src\com\jjf\A6proxy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -76,13 +240,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.A5PrintToFiles">
-    <configuration name="A4PrintDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jjf.A4PrintDate" />
+  <component name="RunManager" selected="Application.ByteToOtherBaseData">
+    <configuration name="B01_FileInputAndOutputStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.book2.B2_Input_and_Output.B01_FileInputAndOutputStream" />
       <module name="importanceCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jjf.*" />
+          <option name="PATTERN" value="com.book2.B2_Input_and_Output.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +254,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="A5PrintClassInformations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jjf.A5PrintClassInformations" />
+    <configuration name="B01_FileToString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.book2.B1_stream.B01_FileToString" />
       <module name="importanceCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jjf.*" />
+          <option name="PATTERN" value="com.book2.B1_stream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +267,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="A5PrintToFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jjf.A5PrintToFiles" />
+    <configuration name="B02_DataInputStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.book2.B2_Input_and_Output.B02_DataInputStream" />
       <module name="importanceCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jjf.*" />
+          <option name="PATTERN" value="com.book2.B2_Input_and_Output.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,8 +280,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HasCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="knowledge.HasCode" />
+    <configuration name="ByteToOtherBaseData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="knowledge.ByteToOtherBaseData" />
       <module name="importanceCode" />
       <extension name="coverage">
         <pattern>
@@ -129,17 +293,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.junkCode.Test2" />
+      <module name="importanceCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="knowledge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.B01_FileToString" />
+      <item itemvalue="Application.B01_FileInputAndOutputStream" />
+      <item itemvalue="Application.B02_DataInputStream" />
+      <item itemvalue="Application.Test2" />
+      <item itemvalue="Application.ByteToOtherBaseData" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.A5PrintToFiles" />
-        <item itemvalue="Application.A5PrintClassInformations" />
-        <item itemvalue="Application.A4PrintDate" />
-        <item itemvalue="Application.HasCode" />
+        <item itemvalue="Application.ByteToOtherBaseData" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.B02_DataInputStream" />
+        <item itemvalue="Application.B01_FileInputAndOutputStream" />
+        <item itemvalue="Application.B01_FileToString" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\LOVE美\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -149,7 +334,24 @@
       <option name="presentableId" value="Default" />
       <updated>1568162489674</updated>
       <workItem from="1568162493327" duration="7627000" />
-      <workItem from="1568183985538" duration="10537000" />
+      <workItem from="1568183985538" duration="23849000" />
+      <workItem from="1568420279790" duration="17738000" />
+      <workItem from="1568471701234" duration="357000" />
+      <workItem from="1568544997645" duration="5448000" />
+      <workItem from="1568550485420" duration="461000" />
+      <workItem from="1568550994429" duration="1836000" />
+      <workItem from="1568596937864" duration="9143000" />
+      <workItem from="1568682210463" duration="9865000" />
+      <workItem from="1568700980778" duration="8883000" />
+      <workItem from="1568714633699" duration="13527000" />
+      <workItem from="1568773204246" duration="19489000" />
+      <workItem from="1568879873680" duration="920000" />
+      <workItem from="1568900624242" duration="2057000" />
+      <workItem from="1568938511146" duration="4619000" />
+      <workItem from="1569111662760" duration="1201000" />
+      <workItem from="1569136214173" duration="14311000" />
+      <workItem from="1569197546034" duration="44883000" />
+      <workItem from="1569327912295" duration="5905000" />
     </task>
     <task id="LOCAL-00001" summary="A4PrintDate:根据日期打印当月的日历">
       <created>1568184370598</created>
@@ -158,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568184370598</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add(A5Print*):通过反射机制，打印类的基本信息">
+      <created>1568212420315</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568212420315</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +388,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A4PrintDate:根据日期打印当月的日历" />
-    <option name="LAST_COMMIT_MESSAGE" value="A4PrintDate:根据日期打印当月的日历" />
+    <MESSAGE value="add(A5Print*):通过反射机制，打印类的基本信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="add(A5Print*):通过反射机制，打印类的基本信息" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/importanceCode$PackJar1.ic" NAME="PackJar1 Coverage Results" MODIFIED="1568771398482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jjf.A13Jar.*</FILTER>
+    </SUITE>
   </component>
 </project>

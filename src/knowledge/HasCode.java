@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 /**
- * @author jjf 2019-7-16  16:30
+ * @author book1 2019-7-16  16:30
  * 功能：测试 Object类 中的 hasCode()方法，以及String类型数据的hasCode值
  *
  * 测试结论：
@@ -74,7 +74,7 @@ public class HasCode {
          */
 
         /**测试自定义类类型hasCode*/
-        ClassA classA1 = new ClassA("jjf");
+        ClassA classA1 = new ClassA("book1");
         ClassA classA2 = new ClassA();
         ClassA classA3 = classA1;
         ClassA classA4 = new ClassA("zem");

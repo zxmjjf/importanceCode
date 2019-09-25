@@ -1,0 +1,81 @@
+Collectors类的所有方法都是静态工厂方法，专门与Stream类的实例方法collect结合，处理流元素！
+处理结果的返回值类型等于静态方法的返回值类型的最后一个类型参数的类型！！而方法在为结合collect之前返回的
+都是Collector的泛型类型：Collector<T,?,V> 等
+
+代码参照：B07_Stream_collect.java
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————
+*************************************************************************************************************
+Map<K, List<V>>  ->  groupingBy(一个函数式接口参数)
+Map<K, V>        ->  groupingBy(两个函数式接口参数)
+Map<K, V>        ->  groupingBy(三个函数式接口参数) //不在能力范围考虑
+注：
+第一个参数是对流元素的方法映射，将其作为Map集合的键。
+第二个参数是Collector其他所有方法，当他是mapping方法时，可以组合更复杂的操作。
+//对应的并行方法：groupingByConcurrent
+
+一种特例优化为：
+Map<Boolean,List<T>>  ->  partitioningBy(Predicate<? super T> predicate) //第一个参数是对流元素的断言映射。
+Map<Boolean,D>        ->  partitioningBy(两个函数式接口映射)
+
+*******************************************************************************************************
+R  ->  Collector<T,?,R> mapping(两个函数式接口参数)
+第一个参数是对流元素或者子流中的流元素的函数映射：如果不需要操作则往往可以是：Function.identity()
+第二个参数是Collectors类的某个静态方法，处理映射之后的新流元素
+
+**********************************************************************************************
+Optional<T>  --> reducing(BinaryOperator<T> op)
+T    ---> reducing(T identity, BinaryOperator<T> op)
+U    ---> reducing(U identity, Function<? super T,? extends U> mapper, BinaryOperator<U> op)
+//第三个方法为了再并行时收益。
+
+**************************************************************************************************
+DoubleSummaryStatistics  ->  summarizingDouble(ToDoubleFunction<? super T> mapper)
+IntSummaryStatistics     ->  summarizingInt(ToIntFunction<? super T> mapper)
+LongSummaryStatistics    ->  summarizingLong(ToLongFunction<? super T> mapper)
+将所有流元素映射成相应值类型值之后（int，double，long），信息由相应对象保存,这些对象有如下方法：
+*** accept(int value),combine(LongSummaryStatistics other) ***
+*** getAverage(), getCount()  ********************************
+*** getMax() , getMin(), getSum(), toString()  ***************
+
+Double   ->  summingDouble(ToDoubleFunction<? super T> mapper)
+Integer  ->  summingInt(ToIntFunction<? super T> mapper)
+Long     ->  summingLong(ToLongFunction<? super T> mapper)
+求所有流元素映射成相应值之后的总和
+
+Double   ->  averagingDouble(ToDoubleFunction<? super T> mapper)
+Double   ->  averagingInt(ToIntFunction<? super T> mapper)
+Double   ->  averagingLong(ToLongFunction<? super T> mapper)
+求所有流元素映射成相应值之后的平均值
+
+Optional<T>  ->  maxBy(Comparator<? super T> comparator)
+Optional<T>  ->  minBy(Comparator<? super T> comparator)
+如果流元素本身实现呢Comparable接口，则可以用：Comparator.comparing(Function.identity())
+或者使用lambda表达式再定义比较器。
+
+String  ->  joining()
+String  ->  joining(CharSequence delimiter)
+String  ->  joining(CharSequence delimiter, CharSequence prefix, CharSequence suffix)
+
+Long -> counting()
+返回 Collector类型的接受元件 T计数输入元件的数量。
+
+*********************************************************************************************
+C  -->  toCollection(集合的构造器引用)：其他列表或集的数据结构，不应该是Map。
+
+static <T> Collector<T,?,Set<T>> toSet()
+static <T> Collector<T,?,List<T>> toList()
+
+1. Map<K,U>  -->  toMap(两个函数式接口)
+都是对流元素的方法映射，第一个结果作为键，第二个结果作为值：往往是Function.identity()。
+2. Map<K,U>  -->  toMap(三个函数式接口)
+第三个函数式接口解决键值对已经存在的情况，其lambda表达式的两个形参分别表示：原值和新值。
+3. M  -->  toMap(四个函数是接口)
+第四个函数式接口是其他继承Map的构造器引用。此时M所表示的类型是构造器所属的类型。
+
+注：toMap相对应的并行方法为：toConcurrentMap，且参数类型相同。
+
+******************************************************************************************************
+collectingAndThen(Collector<T,A,R> downstream, Function<R,RR> finisher)
+
+************************************************************************************************************
+

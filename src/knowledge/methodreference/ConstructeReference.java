@@ -3,7 +3,7 @@ package knowledge.methodreference;
 /**         **主类**
  * 此类用于测试方法引用特特殊情况：构造器引用
  * Class::new
- * @author jjf
+ * @author book1
  * @version 1.0.1 2019-07-28 10:00
  */
 public class ConstructeReference {

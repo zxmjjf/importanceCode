@@ -1,0 +1,13 @@
+1.获得首选API的Preference存储库的根树枝：
+Preference root = new Preference.userRoot();
+Preference root = new Preference.systemRoot();
+
+2.定义首选API的Preference存储库的节点：
+Preference node = root.node("somePath"); //路径名，子目录之间用'/'分隔；
+如果somePath等于包名。则上面两步可以和为如下：
+Preference node = Preference.userNodeForPackage(obj.getClass()); //somePath=obj类所在的包名
+Preference node = Preference.systemNodeForPackage(obj.getClass());
+其中obj往往可以是this。
+
+
+

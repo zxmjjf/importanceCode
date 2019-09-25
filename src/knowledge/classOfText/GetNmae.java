@@ -4,7 +4,7 @@ package knowledge.classOfText;
 import java.lang.reflect.Field;
 
 /**
- * @author jjf
+ * @author book1
  * @version 1.0.1
  * 描述：测试Class类中的方法
  * 1. getName方法放回的类名是否是实际类型

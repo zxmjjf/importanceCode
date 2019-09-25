@@ -1,0 +1,53 @@
+API需要理解的方法
+*********************************************************************
+java.lang.Thread
+1. Thread.UncaughtExceptionHandler（未捕获异常处理器）//是Thread的内部接口
+当Thread由于未捕获的异常而突然终止时，处理程序的 接口被调用。
+如果一个线程一直没有其UncaughtExceptionHandler明确设置，那么它ThreadGroup对象
+充当其UncaughtExceptionHandler。 如果ThreadGroup对象没有处理异常的特殊要求，
+则是默认的未捕获异常处理器！
+注意，此接口为函数式接口，方法名为：void uncaughtException(Thread t, Throwable e)
+java虚拟机忽视此方法抛出的任何异常，即此方法是未捕获异常的终点。
+
+2. Thread.UncaughtExceptionHandler getUncaughtExceptionHandler()
+返回由于未捕获的异常，此线程突然终止时调用的处理程序。即返回此线程的未捕获异常处理器
+
+3. static void setDefaultUncaughtExceptionHandler(Thread.UncaughtExceptionHandler eh)
+设置当线程由于未捕获的异常突然终止而调用的默认处理程序，并且没有为该线程定义其他处理程序。
+此方法是设置整个程序级别的默认未捕获异常处理器。
+
+4. void setUncaughtExceptionHandler(Thread.UncaughtExceptionHandler eh)
+设置当该线程由于未捕获的异常而突然终止时调用的处理程序。
+此方法是针对线程级别的未捕获异常处理器
+注：以上 1~4 可参考 A14_API_testprogram 包的测试程序：A01Thread.java 和 A02Thread.java
+
+5.public static void sleep(long millis) throws InterruptedException
+使用方法：Thread.sleep(daley)
+结果：当前线程的状态别置为：TIMED_WAIITING（即：daley毫秒后才能变回RANNABLE状态，至少dalay毫秒后有可能
+此线程被运行。如果daley时间没结束：
+注意：thread1.sleep(daley) ==> thread.getStatue() = TIMED_WAITING。
+    join() + interrupt() = InterruptedException(thread1线程发出的异常） => thread1.getStatue = TERMINATED;
+(源代码：A03Thread.java for testSleep() method)
+
+6.public final void join() throws InterruptedException
+等待这个线程死亡。 调用此方法的行为方式与调用完全相同 join (0);
+但join(daley): 如果daley 是大于0的double数据，则 daley秒后，此线程状态变为：RUNNABLE
+而如果daley == 0，即调用join()则，此线程只能处于：WAITING.
+注意：thread1.join(daley) ==> thread.getStatue() = TIMED_WAITING。
+    1. thread1.join() => thread1.getStatue() = WAITING;
+    2. thread1.join() + thread1.interrupt() = InterruptedException(thread1线程发出的异常）
+        如果在thread1中捕获了这个异常，则 thread1.getState() = RUNNABLE, 如果为捕获这个异常，则交给
+        为捕获异常处理器处理，之后thread1.getStatue() = TERMINATED。
+    3. thread1.join() + thread1.join()【in thread2】 ==> thread1.getStatue()未变
+    且Thread.currentThread().getStatue() = TERMINATE或者WAITING，注意是没有异常发生！！！
+    (源代码：JoinAddJoin.java  testJoin1() and testJoin2() method)
+    4. thread1.join() + allThread.notify()【or notifyAll()】==> Thread.currentThread().getStatue() == TERMINATED;
+    因为Thread.currentThread()会抛出异常IllegalMonitorStateException
+    5. thread1.join() + Thread.yiely() ==> 则Thread.currentThread()运行完之后：thread1.getstatue == RUNNABLE.
+    因为 Thread.currentThread()会抛出异常:IllegalMonitorStateException
+    所以如果只有thread1 和 thread2 而 mianThread没有让thread1改变状态的语句，则程序相当于死锁。
+
+    直到这里 sleep(daley) 等价于 join(daley), 而想要唤醒这两个方法，可以使用Thread.yield(),注意daley不能等于0，否则异常
+    (源代码：A03Thread.java  for testJoin() method)
+
+7.

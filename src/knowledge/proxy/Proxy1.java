@@ -105,7 +105,14 @@ class TraceHandler implements InvocationHandler {
         System.out.println(")");
         /*Integer integer =  1;
         return integer;*/
-        return method.invoke(target, args);
+        if (method.getName() == "compareTo"){
+            return Integer.parseInt(target.toString()) - Integer.parseInt(args[0].toString());
+        } else{
+            return method.invoke(target, args);
+        }
+
+        //return method.invoke(target, args);
+
         /** return后面的语句才是真正的代理语句，代理的体现，注意此方法的第一个参数：target
          * target的意义是：代理类所正真代理的数据类型，如test1中的Integer数据类型，test2中的MyClass数据类型。
          */
@@ -113,7 +120,7 @@ class TraceHandler implements InvocationHandler {
 }
 
 /**自定义的类*/
-class MyClass implements Comparable{
+class MyClass /*implements Comparable*/{
     int value;
 
     MyClass(int value){
@@ -123,8 +130,8 @@ class MyClass implements Comparable{
         return value + "";
     }
 
-    @Override
+    /*@Override
     public int compareTo(Object o) {
         return value - Integer.parseInt(o.toString());
-    }
+    }*/
 }

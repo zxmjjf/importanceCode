@@ -1,0 +1,6 @@
+ArrayDeque类的基本操作和LinkedList基本操作类似，即相对ArrayList，ArrayDeque更加与LinkedList类似
+
+和LinkedList类似，ArrayDeque可以实现多种数据结构
+动态数组
+栈
+双端队列

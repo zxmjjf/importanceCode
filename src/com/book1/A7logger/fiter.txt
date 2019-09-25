@@ -1,0 +1,31 @@
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+严重: jjf
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+严重: jjf
+java.io.FileNotFoundException
+	at com.book1.A7logger.MyFilter.main(MyFilter.java:23)
+
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+警告: jjf
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+警告: jjf1
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+信息: jjf1
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+信息: jjf2
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+配置: jjf1
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+配置: jjf2
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+详细: jjf
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+详细: jjf
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+非常详细: jjf
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter main
+非常详细: jjf1
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter func
+较详细: ENTRY 6
+9月 18, 2019 9:53:16 下午 com.book1.A7logger.MyFilter func
+较详细: RETURN 7

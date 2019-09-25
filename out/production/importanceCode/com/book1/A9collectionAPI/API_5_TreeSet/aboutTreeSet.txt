@@ -1,0 +1,62 @@
+操作特点：
+存：
+    add(E e), addAll(Collection<? extends E> c)
+取：
+    E ceiling(E e) //大于或等于给定元素的最小元素(null)
+    E higher(E e)  //大于给定元素的最小元素(null)
+    E floor(E e)  //小于或等于给定元素的最大值（null)
+    E lower(E e)  //小于给定元素的最大值（null)
+    E first() //返回此集合中当前的第一个（最低）元素。
+    E last()  //返回此集合中当前的最后（最高）元素。
+删：
+    clear() //从此集合中删除所有元素。
+    E pollFirst() //检索并删除第一个（最低）元素，或返回 null如果该集合为空。
+    E pollLast() //检索并删除最后一个（最高）元素，如果此集合为空，则返回 null 。
+    boolean remove(Object o) //如果存在，则从该集合中删除指定的元素。
+    boolean removeAll(Collection<?> c);
+改：没有修改元素的方法，因为没有索引值，由于与位置无关，所以改相当于：增 + 删
+查：
+    contains(Object o),containsAll(Collection<?> c);
+
+迭代器：
+    Iterator<E> descendingIterator() // 返回该集合元素的反向迭代器（不一定时降序排序）
+    Iterator<E> iterator() //返回集合的正序排序迭代器（不一定时升序排序)
+
+*********************************************************************************
+boolean isEmpty() //如果此集合不包含元素，则返回 true 。
+int size() //返回此集合中的元素数（其基数）。
+default void forEach(Consumer<? super T> action);
+Comparator<? super E> comparator() //返回用于对该集合中的元素进行排序的比较器，或null，如果此集合使用其元素的natural ordering 。
+Object clone() //返回此 TreeSet实例的浅拷贝。
+
+*********************************************************************************
+NavigableSet<E> descendingSet() //返回此集合中包含的元素的反向排序视图。
+
+SortedSet<E> tailSet(E fromElement) //返回toElement元素右边的视图。
+NavigableSet<E> tailSet(E fromElement, boolean inclusive) //与tailSet(E fromElement) 类似，当inclusive为true时可以包含toElement元素
+
+SortedSet<E> headSet(E toElement) //返回toElement元素左边的视图。
+NavigableSet<E> headSet(E toElement, boolean inclusive) //与headSet(E toElement)类似，当inclusive为true时可以包含toElement元素
+
+NavigableSet<E> subSet(E fromElement, boolean fromInclusive, E toElement, boolean toInclusive) //返回该集合的部分的视图，其元素的范围从 fromElement到 toElement 。
+SortedSet<E> subSet(E fromElement, E toElement) //返回此集合的部分的视图，其元素的范围从 fromElement （含）到 toElement ，排他。
+
+继承方法：
+*********************************************************************************
+Methods inherited from class java.util.AbstractSet
+equals, hashCode, removeAll
+*********************************************************************************
+Methods inherited from class java.util.AbstractCollection
+containsAll, retainAll, toArray, toArray, toString
+*********************************************************************************
+Methods inherited from class java.lang.Object
+finalize, getClass, notify, notifyAll, wait, wait, wait
+*********************************************************************************
+Methods inherited from interface java.util.Set
+containsAll, equals, hashCode, removeAll, retainAll, toArray, toArray
+*********************************************************************************
+Methods inherited from interface java.util.Collection
+parallelStream, removeIf, stream
+*********************************************************************************
+Methods inherited from interface java.lang.Iterable
+forEach

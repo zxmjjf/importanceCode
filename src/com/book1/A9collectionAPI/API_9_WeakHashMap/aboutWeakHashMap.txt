@@ -1,0 +1,14 @@
+LinkedHashMap:
+方法和HashMap基本相同
+此类能够自动删除没有被外部引用的键
+具有一个保护方法：
+protected boolean removeEldestEntry(Map.Entry<K,V> eldest)
+如果此地图应该删除其最老的条目，则返回true 。 在将新条目插入到地图中之后，此方法由put和putAll调用。
+它为实施者提供每次添加新的条目时删除最老条目的机会。 如果地图代表一个缓存，这是非常有用的：它允许地图通过删除陈旧的条目来减少内存消耗。
+示例使用：此覆盖将允许地图长达100个条目，然后每次添加新条目时删除最老条目，保持100个条目的稳定状态。
+  private static final int MAX_ENTRIES = 100;
+     protected boolean removeEldestEntry(Map.Entry eldest) {
+        return size() > MAX_ENTRIES;
+     }
+该方法通常不会以任何方式修改地图，而是允许地图按其返回值的指示进行修改。
+当LinkedHashMap结构发生修改时，此方法会被调用。

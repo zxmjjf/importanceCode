@@ -1,0 +1,14 @@
+《流基本注意》
+1. 流不是数据结构或集合，他依赖于具体的数据结构，或者数据的按需生成！
+2. 流的操作不会修改数据源，且对于同一流的实例，不能执行多次同一操作，也不能在多条语句中4
+操作同一个流。而对于已经关闭的流，不能再进行任何操作
+3. 流的操作是尽可能惰性的。
+
+《创建流的方式》
+1. 通过集合转换，stream 或者 parallelStream
+2. 如果数据源是数组，则可以用 Stream.of(T[] arrays) 或者 Stream.of(T...args) 方法。
+3. 如果数据源是数组，还可以使用：Arrays.stream(array, form, to).方法，获得数组子串的流。
+4. 使用Stream.generate方法创建无限流，该方法接受函数式接口，返会值作为流的元素。
+5. 使用Stream.iterate方法创建无限流，static <T> Stream<T> iterate(T seed,UnaryOperator<T> f)
+UnaryOperator<T>函数式接口的抽象方法接受一个实参，返回一个T类型的值。
+该流的第一个元素是对seed映射f方法的返回值，此后第n个元素是第n-1个元素对映射f方法的返回值。

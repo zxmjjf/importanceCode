@@ -1,0 +1,113 @@
+最详细内容可阅读java API
+
+LinkedList的功能十分强大！！！
+注意：LinkedList 的链式实现是双向连接的
+同步转换器： List list = Collections.synchronizedList(new LinkedList(...));
+***************************************************************************************
+LinkedList自己实现的方法：
+    add类型方法：
+        add(E), addLast(E), offer(E), offerLast(E)//添加到尾部
+        addFirst(E), OfferFirst(E), , push(E)  //添加到表头
+        add(index, E) //指定位置添加
+    检索元素类型方法：
+        element(), getFrist(), peek(), peekFirst()//检索表头元素，不删除
+        getLast(), peekLast() //获得表尾元素
+        get(index) //获得指定位置的元素
+    删除元素类型的方法：
+          poll(), pollFist, remove(), removeFrist() //删除表头元素
+          pollLast(), removeLast()， pop() //删除表尾元素
+          remove(Object) //删除特定元素
+          remove(index) //删除特定位置的元素
+    set方法：
+        set(index, E) //修改指定位置的元素的值
+    toArray方法：
+        toArray() //返回Object[]
+        toArray(T[]) //返回T[]
+    获得索引（index）方法：
+        indexOf(Object) // 获得指定元素第一次出现的索引（位置由0开始，如果不含，则返回1）
+        lastIndexOf(Object) //获得指定元素最后一次出现的索引
+    迭代器类型方法：
+        listIterator(index) //返回指定位置开始的List迭代器
+        iterator()
+    查询类型方法：
+        contains(Object 0)
+    清除表中所有元素： clear();
+    克隆：clone()
+
+继承的方法：
+    继承AbstractList： equals, hashCode, listIterator, removeRange, sublist(fromIndex, toIndex)
+    继承AbstractCollection: containsAll(Collection), isEmpty, removeAll, retainAll(Collection), toString
+    继承List （不记录被重写的方法）: sort(Comparetor), replaceAll
+    等等。。。
+
+
+
+**************************************************************************************
+LinkenList 可以代表多种数据结构使用：建议不同数据结构使用特定类型的方，避免混合使用，养成数据结构严谨的习惯
+    1）与ArrayList互补的动态数组ArrayList
+        建议应该使用的常用方法：
+            add类型方法：
+                add(E), addLast(E) //添加到尾部
+                addFirst(E) //添加到表头
+                add(index, E) //指定位置添加
+            检索元素类型方法：(会抛出异常)
+                getFrist()//检索表头元素，不删除
+                getLast()//获得表尾元素
+                get(index) //获得指定位置的元素
+            删除元素类型的方法：
+                remove(), removeFrist() //删除表头元素
+                removeLast() //删除表尾元素
+                remove(Object) //删除特定元素
+                remove(index) //删除特定位置的元素
+            set方法：
+                set(index, E) //修改指定位置的元素的值
+            toArray方法：
+                toArray() //返回Object[]
+                toArray(T[]) //返回T[]
+            获得索引（index）方法：
+                indexOf(Object) // 获得指定元素第一次出现的索引（位置由0开始，如果不含，则返回1）
+                lastIndexOf(Object) //获得指定元素最后一次出现的索引
+            迭代器类型方法：
+                listIterator(index) //返回指定位置开始的List迭代器
+                iterator()
+            查询类型方法：
+                contains(Object 0)
+            清除表中所有元素： clear();
+            克隆：clone()
+
+    2）栈 ：
+        add类型方法：
+                push() //添加到表头！！，即入栈
+            检索元素类型方法：
+                peek(),element()//检索表头元素，不删除
+            删除元素类型的方法：
+                pop() //删除表头！！元素
+            toArray方法：
+                toArray() //返回Object[]
+                toArray(T[]) //返回T[]
+            清除表中所有元素： clear();
+            克隆：clone()
+
+    3）队列和双端队列：ArrayDeque也可以表示队列
+        add类型方法：
+            OfferFirst(E) //添加到表头
+            offer(E), offerLast(E)//添加到尾部
+        检索元素类型方法：
+            peek(), peekFirst()//检索表头元素，不删除
+            peekLast() //获得表尾元素
+        删除元素类型的方法：
+              poll(), pollFist//删除表头元素
+              pollLast() //删除表尾元素
+        toArray方法：
+            toArray() //返回Object[]
+            toArray(T[]) //返回T[]
+        获得索引（index）方法：
+            indexOf(Object) // 获得指定元素第一次出现的索引（位置由0开始，如果不含，则返回1）
+            lastIndexOf(Object) //获得指定元素最后一次出现的索引
+        迭代器类型方法：
+            listIterator(index) //返回指定位置开始的List迭代器
+            iterator()
+        查询类型方法：
+            contains(Object 0)
+        清除表中所有元素： clear();
+        克隆：clone()
