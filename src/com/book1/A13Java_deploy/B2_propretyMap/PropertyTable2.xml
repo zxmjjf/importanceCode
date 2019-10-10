@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>基本信息</comment>
+<entry key="occupation">Student</entry>
+<entry key="photo">183-1240-8434</entry>
+<entry key="Id">441581-19961004-5353</entry>
+<entry key="Name">姜剑锋</entry>
+</properties>

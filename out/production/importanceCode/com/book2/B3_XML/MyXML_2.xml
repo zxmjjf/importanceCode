@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jjf>
+    <身份 id="1" time="14:24">
+        <学生>
+            <学号>2016045244003</学号>
+            <班级>大四</班级>
+            <专业>  软件工程  </专业>
+            <number>007</number>
+            <number>006</number>
+            <number>
+                <notText>不是文本</notText>
+            </number>
+        </学生>
+        <number>005</number>
+    </身份>
+    <基本信息 number="001">
+        <姓名 key="name">姜剑锋</姓名>
+        <电话>18312408434</电话>
+        <身份证>441581199610045353</身份证>
+        <年龄>22Y</年龄>
+        <number>003</number>
+        <number>004</number>
+    </基本信息>
+    <number>001</number>
+    <number>002</number>
+</jjf>

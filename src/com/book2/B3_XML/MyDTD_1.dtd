@@ -1,0 +1,23 @@
+<!ELEMENT jjf (baseInformation,hobby,ability)>
+
+<!ELEMENT baseInformation (name,birth,height)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT birth (years,month,day)>
+<!ELEMENT years (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+
+<!ELEMENT hobby (first,second,third,others)>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT second (#PCDATA)>
+<!ELEMENT third (#PCDATA)>
+<!ELEMENT others (#PCDATA)>
+
+<!ELEMENT ability (java,HTMLCSS,MySql)>
+<!ATTLIST information ability CDATA "能力">
+<!ELEMENT java (#PCDATA) >
+<!ELEMENT HTMLCSS (#PCDATA)>
+<!ELEMENT MySql (#PCDATA)>
+
+<!-- ATTLIST jjf:baseInformation xmlns:jjf CDATA "http://java.mynamespace.com.test1.html" -->

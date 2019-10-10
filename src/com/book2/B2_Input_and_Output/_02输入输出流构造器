@@ -1,0 +1,42 @@
+1. public class FileInputStream extends InputStream
+FileInputStream(File file)
+FileInputStream(String name)
+FileInputStream(FileDescriptor fdObj)：不常用的方式，FileDescriptor文件描述符
+
+2. public class FileOutputStream extends OutputStream
+FileOutputStream(File file)
+FileOutputStream(File file, boolean append) //true表示再文件尾部追加新内容
+FileOutputStream(String name)
+FileOutputStream(String name, boolean append) //true表示再文件尾部追加新内容
+FileOutputStream(FileDescriptor fdObj)
+
+文件操作的底层流
+************************************************************************************************
+3. public class DataInputStream extends FilterInputStream implements DataInput
+DataInputStream(InputStream in): 创建使用指定的底层InputStream的DataInputStream。
+
+4. public class DataOutputStream extends FilterOutputStream implements DataOutput
+DataOutputStream(OutputStream out)：创建一个新的数据输出流，以将数据写入指定的底层输出流。
+
+不能字节操作文件数据，依赖于其他流，
+**************************************************************************************************
+5. public class BufferedInputStream extends FilterInputStream
+BufferedInputStream(InputStream in)
+BufferedInputStream(InputStream in, int size)
+
+6. public class BufferedOutputStream extends FilterOutputStream
+BufferedOutputStream(OutputStream out)
+BufferedOutputStream(OutputStream out, int size)
+
+缓冲区数据流
+*******************************************************************************************************
+7. public class PushbackInputStream extends FilterInputStream
+PushbackInputStream(InputStream in)
+PushbackInputStream(InputStream in, int size)
+
+渴回推输入流: unread(...);
+*********************************************************************************************************
+
+
+
+

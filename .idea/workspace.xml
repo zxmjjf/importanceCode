@@ -7,162 +7,125 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a80cc0b5-fbd0-4627-a7be-96162918c494" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A9collectionAPI/API_3_LinkedLIst/Stack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A9collectionAPI/API_4_HashSet/HashSetOfMethodTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A9collectionAPI/API_5_TreeSet/TreeSetOfMethodTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A9collectionAPI/API_6_PriorityQueue/PriorityQueueOfMethodTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/collectionAPI/API_1_Vector/VectorOfMethodTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/collectionAPI/API_3_LinkedLIst/LinkedListOfMethodTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/com/junkCode/Test1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/ArrayClone.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Child1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Child2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Child2_1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/ClassA.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Equals.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/HasCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Instanceof.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Myclass1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Object.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/Parent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/TextString.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/classOfText/Child.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/classOfText/GetNmae.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/classOfText/Parent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/classOfText/bookforjava.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/ConstructeInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/ConstructeReference$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/ConstructeReference.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/MethodReference.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Myclass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test1Interface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test3Interface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test3MethRefe$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/Test3MethRefe.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/methodreference/大总结.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/A.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/B.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/C.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/IntesSort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/LambdaTest1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/Lamdaparent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/MyselfInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/MyselfLambda.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/myselfLamda/lambda.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/proxy/MyClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/proxy/Proxy1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/proxy/TraceHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B1_jar/PackJar1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B1_jar/Packjar1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B1_jar/Packjar2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/PropertyTable1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/PropertyTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/usage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B3_preferredAPI/usage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B4_serviceLoad/serviceLoad.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API_testprogram/A01Thread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API_testprogram/A02Thread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API_testprogram/A03Thread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API_testprogram/JoinAddJoin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_API_testprogram/测试总结" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge_testprogram/A01Intrrupted.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge_testprogram/A02Intrrupted.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge_testprogram/A03waitStatue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge_testprogram/A04ThreadLocal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A14_Knowledge_testprogram/A05LockAndInterrput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/A_chaptor14_帮助文档.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/codeforbook/A01UnsynchBank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A14concurrent/codeforbook/A02SynchBank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A3/A3_1_StringBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A3/A3_2_Paths.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A3/A3_2_PathsAndScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A5_1ArrayCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A6_0Lambda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A6_0lambda表达式总结.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A6proxy/A6Proxy.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A6proxy/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A6proxy/MyInvocationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A6proxy/RealSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A6proxy/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A7Assert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A7logger/MyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A7logger/MyFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A7logger/fiter.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A7logger/logger用法.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A8genericityt/CreateArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A8genericityt/泛型技术.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/0视图.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_10_LinkedHashSet/LinkHashSet.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_10_LinkedHashSet/TestLinkedHashSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_1_Vector/VectorOfMethodTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_1_Vector/aboutVecotr.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_2_ArrayList/TestArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_2_ArrayList/aboutArrayList.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_3_ArrayDeque/aboutArrayDeque.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_3_LinkedLIst/LinkedListOfMethodTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_3_LinkedLIst/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_3_LinkedLIst/aboutLinkedList.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_4_HashSet/HashSetOfMethodTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_4_HashSet/aboutHashSet.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_5_TreeSet/TreeSetOfMethodTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_5_TreeSet/aboutTreeSet.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_6_PriorityQueue/PriorityQueueOfMethodTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_6_PriorityQueue/aboutPriorityQueue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_7_HashMap/HashMapOfMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_7_HashMap/TestCollections.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_7_HashMap/aboutHashMap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_8_TreeMap/SortedMapToTreeMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_8_TreeMap/TreeMapOfMethodTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_8_TreeMap/aboutTreeMap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_9_WeakHashMap/TestWeakHashMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_9_WeakHashMap/aboutWeakHashMap.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/SynchronizedView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book1/classInformations.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B01_FileToString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B02_FilesLineToStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B03_Stream_peek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B04_Stream_toArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B05_Stream_reduce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B06_Stream_sorted.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B07_Stream_collect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B08_IntStream_range.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B09_IntStream_codePoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B10_Random_ints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B11_Stream_unordered.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/FileObject.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/_CollectorsAPI.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/_StreamOfUse.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B01_FileInputAndOutputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B02_DataInputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/_FileDataProcessing.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/junkCode/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/ByteToOtherBaseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/LOVE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java.util.zip.ZipFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/replay_pid12988.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_总结和反思" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/PropertyTable2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_11_LinkedHashMap/TestLinkedHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B03_Scanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B04_RandomAccessFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B05_ZipxxxStream_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B06_ObjcetStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B07_SerialCloneable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B08_Files.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B09_FileChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B10_PatternTest_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B11_Matcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/ByteFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/MytestZ1ip1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/MytestZip.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/MytestZip_1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/ObjectStream.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/ObjectStream.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/PrintClassConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text4_Scanner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/_01读写器构造器.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/_02输入输出流构造器" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/_04ZipData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/_05Objectserialization.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/B01_ParseXMLdoc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/B02_Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/B03_MyDTD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/B04_XPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/B05_SAX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/B05_SAX_myselfFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/B06_StAX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/B06_StAX_myselfFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/B07_UseStAX_WriteXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/B07_WriteXMLToFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/B07_WriteXMLToFile_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/MyDTD_1.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/MyDTD_2.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/MySVG_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/MyXML_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/MyXML_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/MyXML_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/MyXML_4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/MyXML_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/MyXML_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/_01Element" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/_02Node" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/_03Attr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/_04DTD.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/_05XPath.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B3_XML/_06XMLStreamReader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B01_FirstInternetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B02_BaidudotCom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B03_MySimpleWeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B04_ServerAndClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B05_Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B05_Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/A01_Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/A_MyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/B_Module1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/B_Module2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/B_Module3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/B_Module4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/C_OpenClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/server/A_MyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/server/B_Module1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/server/B_Module2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/server/B_Module3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/server/B_Module4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/server/C_OpenServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/server/_ServerSocket" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jdk api 1.8_google - 副本.CHM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junkCode/MyXmlDom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junkCode/MyfirstJavaFX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junkCode/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junkCode/TestJFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junkCode/myXML.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junkCode/simple.xsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/jjf/A4PrintDate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jjf/A4PrintDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book1/A4PrintDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jjf/A5PrintClassInformations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book1/A5PrintClassInformations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jjf/A5PrintToFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book1/A5PrintClassToFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jjf/classInformations.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jjf/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/ArrayClone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/ArrayClone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/Equals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/Equals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/HasCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/HasCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/classOfText/GetNmae.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/classOfText/GetNmae.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/methodreference/ConstructeReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/methodreference/ConstructeReference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/methodreference/MethodReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/methodreference/MethodReference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/methodreference/大总结.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/methodreference/大总结.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/myselfLamda/LambdaTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/myselfLamda/LambdaTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/proxy/Proxy1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/proxy/Proxy1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book1/A13Java_deploy/B2_propretyMap/PropertyTable1" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book1/A13Java_deploy/B2_propretyMap/PropertyTable1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book1/A13Java_deploy/B2_propretyMap/PropertyTest1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book1/A13Java_deploy/B2_propretyMap/PropertyTest1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book1/A13Java_deploy/B2_propretyMap/usage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book1/A13Java_deploy/B2_propretyMap/usage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book1/A5PrintClassToFiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book1/A5PrintClassToFiles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book1/A9collectionAPI/API_10_LinkedHashSet/TestLinkedHashSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book1/A9collectionAPI/API_10_LinkedHashSet/TestLinkedHashSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B1_stream/B01_FileToString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B1_stream/B01_FileToString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B1_stream/B03_Stream_peek.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B1_stream/B03_Stream_peek.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B1_stream/B06_Stream_sorted.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B1_stream/B06_Stream_sorted.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B1_stream/B07_Stream_collect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B1_stream/B07_Stream_collect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B1_stream/B09_IntStream_codePoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B1_stream/B09_IntStream_codePoints.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B2_Input_and_Output/B01_FileInputAndOutputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B2_Input_and_Output/B01_FileInputAndOutputStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B2_Input_and_Output/B02_DataInputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B2_Input_and_Output/B02_DataInputStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B2_Input_and_Output/Text1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B2_Input_and_Output/Text1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B2_Input_and_Output/Text2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B2_Input_and_Output/Text2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B2_Input_and_Output/Text3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B2_Input_and_Output/Text3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B2_Input_and_Output/_FileDataProcessing.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/knowledge/ByteToOtherBaseData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/knowledge/ByteToOtherBaseData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/PropertyTable1" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/PropertyTable1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/PropertyTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/PropertyTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/usage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book1/A13Java_deploy/B2_propretyMap/usage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book1/A5PrintClassToFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book1/A5PrintClassToFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_10_LinkedHashSet/TestLinkedHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book1/A9collectionAPI/API_10_LinkedHashSet/TestLinkedHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B1_stream/B01_FileToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B01_FileToString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B1_stream/B03_Stream_peek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B03_Stream_peek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B1_stream/B06_Stream_sorted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B06_Stream_sorted.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B1_stream/B07_Stream_collect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B07_Stream_collect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B1_stream/B09_IntStream_codePoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B1_stream/B09_IntStream_codePoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B01_FileInputAndOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B01_FileInputAndOutputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B02_DataInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/B02_DataInputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/_FileDataProcessing.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/_03FileDataProcessing.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -191,6 +154,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Kotlin File" />
         <option value="Class" />
       </list>
     </option>
@@ -204,23 +168,28 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/book2/B2_Input_and_Output/Text3.txt" />
+    <property name="last_opened_file_path" value="E:/javaproject/gameDesign" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\newIDEA\importanceCode\src\com\junkCode" />
+      <recent name="E:\newIDEA\importanceCode\src\com" />
+      <recent name="E:\newIDEA\importanceCode\src\com\book2\B2_Input_and_Output" />
       <recent name="E:\newIDEA\importanceCode\src\com\jjf" />
       <recent name="E:\newIDEA\importanceCode\src\com\jjf\A7logger" />
-      <recent name="E:\newIDEA\importanceCode\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.book2.B2_Input_and_Output" />
       <recent name="com.jjf" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -240,13 +209,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ByteToOtherBaseData">
-    <configuration name="B01_FileInputAndOutputStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.book2.B2_Input_and_Output.B01_FileInputAndOutputStream" />
+  <component name="RunManager" selected="Application.B05_Server">
+    <configuration name="A01_Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.book2.B4_InteRnet.serverAndclient.A01_Client" />
       <module name="importanceCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.book2.B2_Input_and_Output.*" />
+          <option name="PATTERN" value="com.book2.B4_InteRnet.serverAndclient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -254,12 +223,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="B01_FileToString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.book2.B1_stream.B01_FileToString" />
+    <configuration name="A_MyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.book2.B4_InteRnet.serverAndclient.client.A_MyClient" />
       <module name="importanceCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.book2.B1_stream.*" />
+          <option name="PATTERN" value="com.book2.B4_InteRnet.serverAndclient.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -267,12 +236,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="B02_DataInputStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.book2.B2_Input_and_Output.B02_DataInputStream" />
+    <configuration name="B05_Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.book2.B4_InteRnet.B05_Server" />
       <module name="importanceCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.book2.B2_Input_and_Output.*" />
+          <option name="PATTERN" value="com.book2.B4_InteRnet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -280,12 +249,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ByteToOtherBaseData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="knowledge.ByteToOtherBaseData" />
+    <configuration name="C_OpenClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.book2.B4_InteRnet.serverAndclient.client.C_OpenClient" />
       <module name="importanceCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="knowledge.*" />
+          <option name="PATTERN" value="com.book2.B4_InteRnet.serverAndclient.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -293,12 +262,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.junkCode.Test2" />
+    <configuration name="C_OpenServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.book2.B4_InteRnet.serverAndclient.server.C_OpenServer" />
       <module name="importanceCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="knowledge.*" />
+          <option name="PATTERN" value="com.book2.B4_InteRnet.serverAndclient.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -307,19 +276,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.B01_FileToString" />
-      <item itemvalue="Application.B01_FileInputAndOutputStream" />
-      <item itemvalue="Application.B02_DataInputStream" />
-      <item itemvalue="Application.Test2" />
-      <item itemvalue="Application.ByteToOtherBaseData" />
+      <item itemvalue="Application.C_OpenServer" />
+      <item itemvalue="Application.A01_Client" />
+      <item itemvalue="Application.C_OpenClient" />
+      <item itemvalue="Application.A_MyClient" />
+      <item itemvalue="Application.B05_Server" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ByteToOtherBaseData" />
-        <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.B02_DataInputStream" />
-        <item itemvalue="Application.B01_FileInputAndOutputStream" />
-        <item itemvalue="Application.B01_FileToString" />
+        <item itemvalue="Application.C_OpenClient" />
+        <item itemvalue="Application.B05_Server" />
+        <item itemvalue="Application.A01_Client" />
+        <item itemvalue="Application.A_MyClient" />
+        <item itemvalue="Application.C_OpenServer" />
       </list>
     </recent_temporary>
   </component>
@@ -352,6 +321,26 @@
       <workItem from="1569136214173" duration="14311000" />
       <workItem from="1569197546034" duration="44883000" />
       <workItem from="1569327912295" duration="5905000" />
+      <workItem from="1569369683633" duration="21553000" />
+      <workItem from="1569463303933" duration="15332000" />
+      <workItem from="1569481990260" duration="2813000" />
+      <workItem from="1569485424773" duration="1453000" />
+      <workItem from="1569549006424" duration="23285000" />
+      <workItem from="1569632001458" duration="6422000" />
+      <workItem from="1569718989687" duration="9635000" />
+      <workItem from="1569738592176" duration="7980000" />
+      <workItem from="1569808162671" duration="14271000" />
+      <workItem from="1569979419756" duration="48095000" />
+      <workItem from="1570146648397" duration="15260000" />
+      <workItem from="1570236504791" duration="9056000" />
+      <workItem from="1570405667203" duration="4475000" />
+      <workItem from="1570446494603" duration="3990000" />
+      <workItem from="1570492667964" duration="21247000" />
+      <workItem from="1570533881448" duration="11143000" />
+      <workItem from="1570577783531" duration="27090000" />
+      <workItem from="1570621135842" duration="11439000" />
+      <workItem from="1570664026241" duration="27055000" />
+      <workItem from="1570706467343" duration="11774000" />
     </task>
     <task id="LOCAL-00001" summary="A4PrintDate:根据日期打印当月的日历">
       <created>1568184370598</created>
@@ -387,11 +376,36 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="A4PrintDate:根据日期打印当月的日历" />
     <MESSAGE value="add(A5Print*):通过反射机制，打印类的基本信息" />
     <option name="LAST_COMMIT_MESSAGE" value="add(A5Print*):通过反射机制，打印类的基本信息" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/B05_Server.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/C_OpenClient.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/C_OpenClient.java</url>
+          <line>204</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/importanceCode$TestLinkedHashMap.ic" NAME="TestLinkedHashMap Coverage Results" MODIFIED="1570105585829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.book1.A9collectionAPI.API_11_LinkedHashMap.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/importanceCode$PackJar1.ic" NAME="PackJar1 Coverage Results" MODIFIED="1568771398482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jjf.A13Jar.*</FILTER>
     </SUITE>

@@ -1,0 +1,73 @@
+void close(): 释放与此Reader相关联的任何资源。
+
+int getAttributeCount(): 返回此START_ELEMENT上的属性数量，此方法仅适用于START_ELEMENT或ATTRIBUTE。
+String getAttributeLocalName(int index): 返回提供的索引处的属性的localName
+QName getAttributeName(int index): 返回提供的索引处的属性的qname
+String getAttributeNamespace(int index): 返回在提供的索引处的属性的命名空间
+String getAttributePrefix(int index): 在提供的索引处返回此属性的前缀
+String getAttributeType(int index): 返回提供的索引处的属性的XML类型
+String getAttributeValue(int index): 返回索引处的属性值
+String getAttributeValue(String namespaceURI, String localName): 返回具有命名空间和localName的属性的归一化属性值如果namespaceURI为空，则不会检查命名空间是否相等
+
+String getCharacterEncodingScheme(): 返回在xml声明中声明的字符编码如果没有声明，则返回null
+String getElementText(): 读取纯文本元素的内容，如果这不是纯文本元素，则抛出异常。
+String getEncoding(): 如果已知返回输入编码，如果未知则返回null。
+
+int getEventType(): 返回指示光标指向的事件类型的整数代码。
+String getLocalName(): 返回当前事件的（本地）名称。
+Location getLocation(): 返回处理器的当前位置。
+QName getName(): 返回当前START_ELEMENT或END_ELEMENT活动的QName
+NamespaceContext getNamespaceContext(): 返回当前位置的只读命名空间上下文。
+int getNamespaceCount(): 返回在此START_ELEMENT或END_ELEMENT上声明的命名空间数，此方法仅适用于START_ELEMENT，END_ELEMENT或NAMESPACE。
+String getNamespacePrefix(int index): 返回在索引处声明的命名空间的前缀。
+String getNamespaceURI(): 如果当前事件是START_ELEMENT或END_ELEMENT，则此方法返回前缀或缺省命名空间的URI。
+String getNamespaceURI(int index): 返回在索引处声明的命名空间的uri。
+String getNamespaceURI(String prefix)
+返回给定前缀的uri。
+String getPIData()
+获取处理指令的数据部分
+String getPITarget()
+获取处理指令的目标
+String getPrefix()
+返回当前事件的前缀，如果事件没有前缀，则返回null
+Object getProperty(String name)
+从底层实现获取特征/属性的值
+String getText()
+以字符串形式返回解析事件的当前值，返回CHARACTERS事件的字符串值，返回COMMENT的值，ENTITY_REFERENCE的替换值，CDATA部分的字符串值，SPACE的字符串值事件或DTD的内部子集的String值。
+char[] getTextCharacters()
+返回一个包含此事件中的字符的数组。
+int getTextCharacters(int sourceStart, char[] target, int targetStart, int length)
+获取与CHARACTERS，SPACE或CDATA事件关联的文本。
+int getTextLength()
+返回文本字符数组中此Text事件的字符序列长度。
+int getTextStart()
+返回文本字符数组中存在第一个字符（该文本事件）的偏移量。
+String getVersion()
+获取在xml声明中声明的xml版本如果没有声明，则返回null
+boolean hasName()
+如果当前事件有一个名称（是START_ELEMENT或END_ELEMENT）返回false则返回true
+boolean hasNext()
+如果有更多的解析事件，返回true，如果没有更多的事件，返回false。
+boolean hasText()
+如果当前事件有文本，则返回true，否则返回false以下事件具有文本：CHARACTERS，DTD，ENTITY_REFERENCE，COMMENT，SPACE
+boolean isAttributeSpecified(int index)
+返回一个布尔值，表示此属性是否默认创建
+boolean isCharacters()
+如果光标指向字符数据事件，则返回true
+boolean isEndElement()
+如果光标指向结束标记（否则为false），则返回true
+boolean isStandalone()
+从xml声明获取独立声明
+boolean isStartElement()
+如果光标指向起始标记（否则为false），则返回true
+boolean isWhiteSpace()
+如果游标指向由所有空格组成的字符数据事件，则返回true
+int next()
+获取下一个解析事件 - 处理器可能会在单个块中返回所有连续的字符数据，也可能会将其拆分成多个块。
+int nextTag()
+跳过任何空白处（isWhiteSpace（）返回true），COMMENT或PROCESSING_INSTRUCTION，直到达到START_ELEMENT或END_ELEMENT。
+void require(int type, String namespaceURI, String localName)
+测试当前事件是否为给定类型，如果命名空间和名称与当前命名空间和当前事件的名称相匹配。
+boolean standaloneSet()
+检查文档中是否设置了独立的
+

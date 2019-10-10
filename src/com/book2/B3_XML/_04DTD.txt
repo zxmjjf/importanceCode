@@ -1,0 +1,13 @@
+XML文档组成部分：元素 属性 实体 #PCDATA  #CDATA
+元素：<!ELEMENT elementName (子节点列表)>
+【子节点列表：(#PCDATA|E1,E2...)* , ANY(任意子元素), EMPTY(不允许有子元素)】
+
+属性：<!ATTLIST elementName attName DATATYPE data> 【data: #REQUIRED   #IMPLIED  (default)   #FIXED data)】
+【DATATYPE: CDATA (A1,A2,...), ENTITY, ...】
+
+代码框架：
+DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+factory.setValidating(true);
+factory.setIgnoringElementContentWhitespace(true);
+DocumentBuilder builder = factory.newDocumentBuilder();
+Document document = builder.parse("src/com/book2/B3_XML/MyXML_3.xml");

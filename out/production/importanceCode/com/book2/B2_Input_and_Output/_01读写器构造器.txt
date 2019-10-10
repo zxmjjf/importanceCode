@@ -1,0 +1,76 @@
+1. public class PrintWriter extends Writer
+public PrintWriter(String); //第一个String是文件名
+public PrintWriter(String, String);
+public PrintWriter(String, Charset);
+
+public PrintWriter(File);
+public PrintWriter(File, String);
+public PrintWriter(File, Charset);
+
+public PrintWriter(Writer);
+public PrintWriter(Writer, boolean); //是否自动flush
+
+public PrintWriter(OutputStream, boolean, Charset);
+public PrintWriter(OutputStream, boolean);
+public PrintWriter(OutputStream);
+
+*************************************************************************************
+2. public class BufferedWriter extends Writer
+BufferedWriter(Writer out)：创建使用默认大小的输出缓冲区的缓冲字符输出流。
+BufferedWriter(Writer out, int sz)：创建一个新的缓冲字符输出流，使用给定大小的输出缓冲区。
+
+用法：  PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("foo.out")));
+
+*************************************************************************************
+3. public final class Scanner extends Object implements Iterator<String>, Closeable
+public Scanner(InputStream, String);
+public Scanner(InputStream);
+public Scanner(InputStream, Charset);
+
+public Scanner(Readable);
+private Scanner(Readable, Pattern);
+
+public Scanner(File);
+public Scanner(File, Charset);
+public Scanner(File, String);
+private Scanner(File, CharsetDecoder);
+
+public Scanner(ReadableByteChannel);
+public Scanner(ReadableByteChannel, String);
+public Scanner(ReadableByteChannel, Charset);
+
+public Scanner(Path);
+public Scanner(Path, String);
+public Scanner(Path, Charset);
+public Scanner(String);
+
+************************************************************************************************
+4. public class BufferedReader extends Reader
+BufferedReader(Reader in)：创建使用默认大小的输入缓冲区的缓冲字符输入流。
+BufferedReader(Reader in, int sz)：创建使用指定大小的输入缓冲区的缓冲字符输入流。
+
+用法：BufferedReader in = new BufferedReader(new FileReader("foo.in"));
+Scanner scan = new Scanner(in);
+
+**************************************************************************
+5. public class OutputStreamWriter extends Writer
+OutputStreamWriter(OutputStream out)
+OutputStreamWriter(OutputStream out, Charset cs)
+OutputStreamWriter(OutputStream out, CharsetEncoder enc)
+OutputStreamWriter(OutputStream out, String charsetName)
+
+6. public class InputStreamReader extends Reader
+InputStreamReader(InputStream in)
+InputStreamReader(InputStream in, Charset cs)
+InputStreamReader(InputStream in, CharsetDecoder dec)
+InputStreamReader(InputStream in, String charsetName)
+
+
+
+
+
+
+
+
+
+

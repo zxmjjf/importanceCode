@@ -8,10 +8,10 @@ public class B09_IntStream_codePoints {
         String string = "\uD955\uD835\uDD46\uDD001 is the 姜剑锋, 一二三四五abcd";
         IntStream intStream = string.codePoints();
         int[] ints = intStream.toArray();
-        System.out.println(Arrays.toString(ints));
+        System.out.println("Size = " + ints.length  + " :\t" + Arrays.toString(ints));
 
         intStream = string.chars();
         ints = intStream.toArray();
-        System.out.println(Arrays.toString(ints));
+        System.out.println("Size = " + ints.length  + " :\t" + Arrays.toString(ints));
     }
 }

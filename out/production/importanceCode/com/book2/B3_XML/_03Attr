@@ -1,0 +1,8 @@
+一般不必用到这个类的方法。
+String getName(): 返回此属性的名称。
+void setValue(String value) //在检索时，属性的值作为字符串返回。
+String getValue() //在检索时，属性的值作为字符串返回。
+Element getOwnerElement() //此属性附加的节点Element或 null如果此属性未使用。
+TypeInfo getSchemaTypeInfo() //与此属性相关联的类型信息。
+boolean getSpecified()  //True如果这个属性在实例文档中被明确赋予了一个值， false否则。
+boolean isId()  //返回此属性是否已知为类型ID（即

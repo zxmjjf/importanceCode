@@ -29,6 +29,21 @@ DataInputStream dataInput = new DataInputStream(fileInput);
 
 *********************************************************************************************
 以文本方式处理文件数据的基本框架：
-1. 将小文本转化为String
+1. 读/写文件的字符数据，适用于中小文件。
+读：
+    Path path = Paths.get("fileName");
+    byte[] bytes = Files.readAllBytes(path);
+    String string = Files.readString(path), StandardCharsets.UTF_8);
+    Stream<String> stringStream = Files.lines(path), StandardCharsets.UTF_8); //以行为单位
+    List<String> list = Files.readAllLines(path), StandardCharsets.UTF_8); ////以行为单位
+写：
+    Files.write(path, bytes);  //注意此时的byte是某个字符串的转换：byte[] bytes = string.getBytes(StandardCharsets.UTF_8)
+    Files.writeString(path, string, StandardOpenOption.APPEND); //上面一条也有这个参数
+    Files.write(path, list, T...args); //args = StandardCharsets.UTF_xx, StandardOpenOption.APPEND
+
+
+2. 将中等大小的文本数据转换为一行：
+
+
 
 

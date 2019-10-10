@@ -17,12 +17,12 @@ public class A5PrintClassToFiles {
 
     public static void main(String[] args) {
         try {
-            printWriter = new PrintWriter("null", "UTF-8");
+            printWriter = new PrintWriter("src/com/book2/B2_Input_and_Output/Text4_Scanner.txt", "UTF-8");
         } catch (IOException e) {
             printWriter.println("文件处理异常");
         }
 
-        String className = "java.util.logging.Formatter";
+        String className = "java.io.PrintWriter";
         printClass(className);
 
         printWriter.close();

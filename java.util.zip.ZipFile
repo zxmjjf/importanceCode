@@ -1,0 +1,6 @@
+	public ZipFile(File, Charset);
+	public ZipFile(String, Charset);
+	public ZipFile(File, int, Charset);
+	public ZipFile(String);
+	public ZipFile(File, int);
+	public ZipFile(File);

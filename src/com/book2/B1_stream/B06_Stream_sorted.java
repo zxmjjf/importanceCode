@@ -2,6 +2,7 @@ package com.book2.B1_stream;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
 
 /**
@@ -16,7 +17,8 @@ public class B06_Stream_sorted {
         System.out.println(Arrays.toString(strings));
 
         //自定义排序方式
-        Stream<String> stringStream1 = Stream.of(strings).sorted(Comparator.comparing(String::length));
+        AtomicInteger a = new AtomicInteger();
+        Stream<String> stringStream1 = Stream.of(strings).sorted(Comparator.comparing(v -> a.getAndIncrement()));
         String[] strings1 = stringStream1.toArray(String[]::new);
         System.out.println(Arrays.toString(strings1));
 

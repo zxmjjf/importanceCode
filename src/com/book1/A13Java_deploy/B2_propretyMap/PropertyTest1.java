@@ -1,7 +1,10 @@
 package com.book1.A13Java_deploy.B2_propretyMap;
 
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Properties;
 
 /**
@@ -10,50 +13,30 @@ import java.util.Properties;
  * <describe>属性映射的使用</describe>
  */
 public class PropertyTest1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         test1();
     }
 
-    private static void test1(){
+    private static void test1() throws IOException {
         Properties properties = new Properties();
         properties.setProperty("Name", "姜剑锋");
         properties.setProperty("Id", "441581-19961004-5353");
-        properties.setProperty("photo", "183-1240-8434");
+        properties.setProperty("photo", "183-1240-7450");
         properties.setProperty("occupation", "Student");
 
-        System.out.println("1");
-        System.out.println(properties);
 
-        Properties properties1 = new Properties();
+        Path  path = Paths.get("src/com/book2/B3_XML/MyXML_1.xml");
+        try (OutputStream outputStream = Files.newOutputStream(path, StandardOpenOption.CREATE);
+             InputStream inputStream = Files.newInputStream(path, StandardOpenOption.CREATE)
+             ) {
+            properties.storeToXML(outputStream, "基本信息");
 
-        /*try {
-            FileOutputStream fileOutputStream = new FileOutputStream("src/com/book1/A14propretyMap/PropertyTable1");
-            properties.store(fileOutputStream, "个人基本信息");
-            fileOutputStream.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-        /*try (FileOutputStream out = new FileOutputStream("src/com/book1/A14propretyMap/PropertyTable1");
-             FileInputStream in = new FileInputStream("src/com/book1/A14propretyMap/PropertyTable1")) {
-            out.write('\n');
-            properties.store(out, "informations!!!");
-            properties1.load(in);
-        } catch (IOException e) {
-            e.printStackTrace();
+            //读取配置文件
+            Properties properties1 = new Properties();
+            properties1.loadFromXML(inputStream);
+            System.out.println(properties1.get("photo"));
+
         }
-
-        System.out.println("2");
-        System.out.println(properties1);
-        */
-
-        Properties properties2 = new Properties();
-        try (FileInputStream inputStream = new FileInputStream("src/com/book1/A13Java_deploy/B2_propretyMap/PropertyTable1")) {
-            properties2.load(inputStream);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        System.out.println("3");
-        System.out.println(properties2);
 
     }
 }

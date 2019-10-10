@@ -29,6 +29,8 @@ public class TestLinkedHashSet {
         }
         System.out.println();
         System.out.println("linkedHashSet = " + linkedHashSet);
+        linkedHashSet.forEach(v -> System.out.print(v + "\t"));
+        System.out.println();
         System.out.println("HashSet = " + hashSet);
     }
 }

@@ -1,0 +1,59 @@
+org.w3c.dom Interface Node
+【Be careful: this is a Interface】
+**********************************************************************
+当节点是元素的属性时：
+String getNodeName() //该节点的名称取决于其类型; 见上表。
+short getNodeType() //代表基础对象的类型的代码，如上所定义。
+String getNodeValue() //该节点的值取决于其类型; 如果节点是Attr，则其返回Attr对应的属性的值。
+void setNodeValue(String nodeValue) //该节点的值取决于其类型; 见上表。
+
+添加子节点：Node appendChild(Node newChild) //将节点 newChild添加到此节点的子节点列表的末尾。
+获得子节点：Node getFirstChild() //这个节点的第一个孩子。
+          Node getLastChild() //这个节点的最后一个孩子。
+          Node getNextSibling() //紧随该节点的节点。是调用方法的节点的兄弟节点
+          Node getPreviousSibling() //紧邻节点之前的节点。
+克隆节点：Node cloneNode(boolean deep) //返回此节点的副本，即，作为节点的通用拷贝构造函数。
+比较两节点：short compareDocumentPosition(Node other) //比较两节点
+获得节点属性列表：NamedNodeMap getAttributes() //返回此节点中所有属性的列表，
+获得子节点列表：NodeList getChildNodes() //返回此节点的所有子节点列表
+删除子节点：Node removeChild(Node oldChild) //通过删除指定的子节点 oldChild儿童的名单，并将其返回。
+替换子节点：Node replaceChild(Node newChild, Node oldChild) //替换子节点 oldChild与 newChild儿童的名单，并返回 oldChild节点。
+获得父节点：Node getParentNode() //这个节点的父节点。
+boolean hasAttributes() //如果此节点是元素，且具有属性，则返回true，否则返回false
+boolean hasChildNodes() //返回此节点是否有任何子节点。
+boolean isEqualNode(Node arg) //测试两个节点是否相等。可以是不同对象
+boolean isSameNode(Node other) //返回此节点是否与给定节点相同。同一对象
+Document getOwnerDocument() //与此节点相关 Document对象。
+
+当子节点是文本数据时：
+String getTextContent() //此属性返回此节点及其后代的文本内容。
+void setTextContent(String textContent) //此属性返回此节点及其后代的文本内容。
+
+*********************************************************************************************************************
+String getBaseURI() //该节点的绝对基本URI或 null如果实现无法获取绝对URI。
+Object getFeature(String feature, String version)
+该方法返回一个专门的对象，该对象实现指定的特征和版本的专门API，如
+String getLocalName()
+返回此节点的限定名称的本地部分。
+String getNamespaceURI()
+该节点的命名空间URI，或 null如果它是未指定的（见）。
+String getPrefix()
+该节点的命名空间前缀，如果 null指定，则为null。
+Object getUserData(String key)
+检索与该节点上的键相关联的对象。
+Node insertBefore(Node newChild, Node refChild) //插入节点 newChild现有的子节点之前 refChild 。
+boolean isDefaultNamespace(String namespaceURI)
+此方法检查指定的namespaceURI namespaceURI是默认命名空间。
+boolean isSupported(String feature, String version)
+测试DOM实现是否实现特定功能，并且此节点支持该功能，如下所述。
+String lookupNamespaceURI(String prefix)
+从该节点开始，查找与给定前缀相关联的命名空间URI。
+String lookupPrefix(String namespaceURI)
+从该节点开始查找与给定名称空间URI关联的前缀。
+void normalize()
+将所有 Text节点的子树的全部深度此下方 Node ，包括属性节点，成“正常”的形式，其中仅结构（例如，元素，注释，处理指令，CDATA部分和实体引用）分隔 Text节点，即没有相邻的 Text节点，也没有空的 Text节点。
+void setPrefix(String prefix)
+该节点的命名空间前缀，如果 null指定，则为null。
+Object setUserData(String key, Object data, UserDataHandler handler)
+将对象与此节点上的键相关联。
+

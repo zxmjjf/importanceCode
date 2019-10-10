@@ -17,7 +17,7 @@ public class B02_DataInputStream {
     public static void main(String[] args) {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream("src/com/book2/B2_Input_and_Output/Text3.txt");
-            //DataOutputStream dataOutputStream = new DataOutputStream(fileOutputStream);
+            DataOutputStream dataOutputStream = new DataOutputStream(fileOutputStream);
 
             FileInputStream fileInputStream = new FileInputStream("src/com/book2/B2_Input_and_Output/Text3.txt");
             DataInputStream dataInputStream = new DataInputStream(fileInputStream);
@@ -34,7 +34,7 @@ public class B02_DataInputStream {
             System.out.println(dataInputStream.readUTF());*/
 
             //写int数据
-            /*Random random = new Random(0);
+            Random random = new Random(0);
             IntStream intStream = random.ints(20, -20, 20);
             intStream = intStream.peek(v -> System.out.print(v + "   "));
 
@@ -45,9 +45,9 @@ public class B02_DataInputStream {
                     e.printStackTrace();
                 }
             });
-            dataOutputStream.flush();*/
+            dataOutputStream.flush();
 
-            PrintWriter printWriter = new PrintWriter(fileOutputStream);
+            /*PrintWriter printWriter = new PrintWriter(fileOutputStream);
             printWriter.write('a');
             printWriter.println("jjf134");
             printWriter.println(123);
@@ -58,20 +58,23 @@ public class B02_DataInputStream {
             System.out.println(dataInputStream.readChar());
             System.out.println(dataInputStream.readChar());
             System.out.println(dataInputStream.readInt());
-            System.out.println(dataInputStream.readChar());
+            System.out.println(dataInputStream.readChar());*/
 
-            /*System.out.println();
+            System.out.println();
             while (dataInputStream.available() > 0) {
                 System.out.println(dataInputStream.available() + "--> " + dataInputStream.readInt());
-            }*/
-
+            }
 
 
 
             dataInputStream.close();
-            //dataOutputStream.close();
+            dataOutputStream.close();
             fileInputStream.close();
-            //fileOutputStream.close();
+            fileOutputStream.close();
+            byte[] bytes = Files.readAllBytes(Paths.get("src/com/book2/B2_Input_and_Output/Text3.txt"));
+            System.out.println(bytes.length);
+
+            System.out.println(ByteFactory.getInt(Arrays.copyOf(bytes, 4)) + Integer.MAX_VALUE);
         } catch (IOException e) {
             e.printStackTrace();
         }

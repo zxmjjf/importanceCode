@@ -51,7 +51,7 @@ public class B07_Stream_collect {
         /* stream.collect(groupingBy(v -> v % 5, mapping(Function.identity(), toCollection(TreeSet::new))));*/
         System.out.println();
         Stream<Integer> integerStream6 = Stream.of(integers);
-        Map<Integer, TreeSet<Integer>> map5 = integerStream6.collect(groupingBy(v -> v % 5, mapping(Function.identity(), toCollection(TreeSet::new))));
+        Map<Integer, TreeSet<String>> map5 = integerStream6.collect(groupingBy(v -> v % 5, mapping(v -> v + "jjf", toCollection(TreeSet::new))));
         System.out.println(map5);
     }
 

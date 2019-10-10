@@ -21,6 +21,7 @@ public class B01_FileToString {
 
 
         /*将String转化为集合*/
+        assert files != null;
         List<String> list = Arrays.asList(files.split("\\PL+"));
         //System.out.println(list);
 

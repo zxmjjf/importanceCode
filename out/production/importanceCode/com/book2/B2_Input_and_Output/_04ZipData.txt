@@ -1,0 +1,30 @@
+构造读取ZIP文件的数据流：
+***********************************************************************************************************88
+搭建Zip输入流环境：
+     获得ZIP文件对象： ZipFile zipFile = new ZipFile("ZipfileName", StandardCharsets.UTF_8);
+       构建ZIP输入流： ZipInputStream zipInputStream = new ZipInputStream(new FileInputStream("ZipfileName"));
+       保存ZIP子项目： ZipEntry zipEntry = zipInputStream.getNextEntry();
+搭建ZIP子项目的数据流:  InputStream inputStream = zipFile.getInputStream(zipEntry);
+之后再对inputStream进行需要的组合或者读取入：缓冲BufferInputSteam，数据流DataInputStream，字符输出Scanner等。
+
+相应的构造方法
+打开一个zip文件进行阅读。
+java.util.zip.ZipFile
+	public ZipFile(File, Charset);
+	public ZipFile(File, int mode, Charset);
+	public ZipFile(String, Charset);
+	public ZipFile(String);
+	public ZipFile(File, int mode); //mode参数必须是OPEN_READ或OPEN_READ | OPEN_DELETE 。最好默认！
+	public ZipFile(File);
+
+java.util.zip.ZipInputStream
+	public ZipInputStream(InputStream, Charset);
+	public ZipInputStream(InputStream);
+
+java.util.zip.ZipEntry
+	ZipEntry();
+	public ZipEntry(ZipEntry);
+	public ZipEntry(String);
+保存条目的详细信息
+
+

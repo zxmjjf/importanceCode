@@ -1,0 +1,36 @@
+@//明白
+！//不懂用法,省略标记
+#】//猜测
+作为一个元素特有操作：
+1.基本操作：
+元素名称：String getTagName() //元素的名称。
+搜索属性：String getAttribute(String name) //按名称检索属性值。【@】
+检查属性：boolean hasAttribute(String name) // 判断该元素是否有指定名称的属性
+子标签节点：NodeList getElementsByTagName(String name) //返回 NodeList所有子孙的 Elements具有给定标记名称，在文档顺序。
+//获得子节点列表：NodeList getChildNodes() //返回此节点的所有子节点列表【Node】
+删除属性：void removeAttribute(String name) //按名称删除属性。
+        Attr removeAttributeNode(Attr oldAttr) //删除指定的属性节点。
+添加属性：void setAttribute(String name, String value) //添加一个新属性。
+        Attr setAttributeNode(Attr newAttr) //添加一个新的属性节点。
+#】：返回子所有元素中，标签元素名字为指定字符串的子元素组成的节 点列表
+************************************************************************************************************
+Attr getAttributeNode(String name) //按名称检索属性节点。
+Attr getAttributeNodeNS(String namespaceURI, String localName) //通过本地名称和命名空间URI Attr节点。
+String getAttributeNS(String namespaceURI, String localName) //通过本地名称和命名空间URI检索属性值。
+NodeList getElementsByTagNameNS(String namespaceURI, String localName)//返回 NodeList所有后代的 Elements具有给定本地名称和命名空间URI在文档顺序。
+TypeInfo getSchemaTypeInfo() //与该元素相关联的类型信息。
+boolean hasAttributeNS(String namespaceURI, String localName) //返回 true在此元素上被指定或具有默认值，与给定的本地名称和命名空间的属性URI false其他。
+void removeAttributeNS(String namespaceURI, String localName)
+通过本地名称和命名空间URI删除属性。
+Attr setAttributeNodeNS(Attr newAttr)
+添加一个新属性。
+void setAttributeNS(String namespaceURI, String qualifiedName, String value)
+添加一个新属性。
+void setIdAttribute(String name, boolean isId)
+如果参数 isId为 true ，则此方法将指定的属性声明为用户确定的ID属性。
+void setIdAttributeNode(Attr idAttr, boolean isId)
+如果参数 isId为 true ，则此方法将指定的属性声明为用户确定的ID属性。
+void setIdAttributeNS(String namespaceURI, String localName, boolean isId)
+如果参数 isId为 true ，则此方法将指定的属性声明为用户确定的ID属性。
+
+[还有Methods inherited from interface org.w3c.dom.Node 类中的所有方法]

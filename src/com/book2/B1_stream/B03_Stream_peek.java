@@ -19,6 +19,6 @@ public class B03_Stream_peek {
 
         //test2
         Stream<String> stringStream1 = Stream.of("jjf1", "jiang", "18312408434", "1997", "小狼");
-        stringStream1.peek(v -> System.out.println("【" + v + "】")).forEach(System.out::println);
+        System.out.println(stringStream1.peek(v -> System.out.println("【" + v + "】")).findFirst());
     }
 }

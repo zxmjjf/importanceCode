@@ -1,0 +1,26 @@
+<!ELEMENT jjf (baseInformation,hobby,ability)>
+
+<!ELEMENT baseInformation (name,birth,height)>
+    <!ATTLIST baseInformation information CDATA #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT birth (years,month,day)>
+        <!ATTLIST birth Y CDATA #REQUIRED>
+        <!ATTLIST birth M CDATA #REQUIRED>
+        <!ATTLIST birth D CDATA #REQUIRED>
+<!ELEMENT years (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+
+<!ELEMENT hobby (first,second,third,others)>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT second (#PCDATA)>
+<!ELEMENT third (#PCDATA)>
+<!ELEMENT others (#PCDATA)>
+
+<!ELEMENT ability (java,HTMLCSS,MySql)>
+<!ATTLIST information ability CDATA "能力">
+<!ELEMENT java (#PCDATA) >
+<!ELEMENT HTMLCSS (#PCDATA)>
+<!ELEMENT MySql (#PCDATA)>

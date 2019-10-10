@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE jjf SYSTEM "E:\newIDEA\importanceCode\src\com\book2\B3_XML\MyDTD_1.dtd">
+<jjf>
+    <baseInformation>
+        <name>姜剑锋</name>
+        <birth>
+            <years>1997</years>
+            <month>7</month>
+            <day>16</day>
+        </birth>
+        <height>163</height>
+    </baseInformation>
+    <hobby>
+        <first>swimming</first>
+        <second>running</second>
+        <third>reading</third>
+        <others>Playing basketball, watching movies, climbing mountains and so on</others>
+    </hobby>
+    <ability>
+        <java>master</java>
+        <HTMLCSS>into a subject</HTMLCSS>
+        <MySql>into a subject</MySql>
+    </ability>
+</jjf>
