@@ -16,7 +16,7 @@ public class B06_Server {
     public static void main(String[] args) {
         try (ServerSocket serverSocket = new ServerSocket(22)) {
             //搭建服务端 套接字流
-
+//
             System.out.println("正等待连接。。。");
             boolean hadClient = false;
             while (clientNum > 0 || !hadClient) {
