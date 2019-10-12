@@ -54,7 +54,7 @@ public class A_MyClient {
             e.printStackTrace();
         }
         SwingUtilities.updateComponentTreeUI(clientFrame);
-        clientFrame.setBounds((clientSum.get() - 1)  * 100, (clientSum.get() - 1) * 100, 700, 700);
+        clientFrame.setBounds((clientSum.get() - 1)  * 100, (clientSum.get() - 1) * 100, 450, 480);
         clientFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         clientFrame.setVisible(true);
         clientFrame.setResizable(false);

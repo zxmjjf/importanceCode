@@ -1,6 +1,4 @@
-package com.book2.B4_InteRnet.serverAndclient;
-
-import com.book2.B4_InteRnet.B06_ClientUI;
+package com.book2.B4_InteRnet;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -13,7 +11,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class A01_Client {
+public class B06_ClientUI {
     /*客户端计数器*/
     private static int unmber = 0;
     private JFrame clientFrame; //客户端图形图形界面
@@ -27,7 +25,7 @@ public class A01_Client {
     /**
      * <describe>客户端构造器</describe>
      */
-    public A01_Client(){
+    public B06_ClientUI(){
         //设置组件属性
         clientFrame = new JFrame("客户端" + ++unmber);
 
@@ -57,6 +55,10 @@ public class A01_Client {
         }
         //3.连接按钮
         linkButton = new JButton("link / 链接");
+        linkButton.setBackground(Color.PINK);
+        linkButton.setFocusPainted(false); //响应按钮事件之后不会有选中标记！
+
+
         //4.组装
         jPanel1.setLayout(new BorderLayout());
         jPanel1.add(jLabel, BorderLayout.WEST);
@@ -132,7 +134,8 @@ public class A01_Client {
                     socket.connect(new InetSocketAddress(address[0], Integer.parseInt(address[1])), 3000); //最多3秒延迟
                     if (socket.isConnected()) {
                         //客户端读取服务器响应线程任务设置
-                        jTextArea.append("连接成功：等待客户端回复线程已经开启...");
+
+                        jTextArea.setText("连接成功：等待客户端回复线程已经开启...\n");
                         respondThread(connected);
                         //延迟。让上面函数的功能正常完成
                         Thread.sleep(100);
@@ -199,10 +202,16 @@ public class A01_Client {
                         //捕获输入信息
                         System.out.println("发送请求"); //测试语句
                         String request = jTextArea.getText();
-                        System.out.println(request);
+                        String text = "";
+                        String[] newRequest = request.split("\n");
+                        for (int i = 0; i < newRequest.length; ++i) {
+                            text = text + newRequest[i];
+                        }
+
+                        System.out.println("text = " + text);
                         jTextArea.setText("");
                         //写出请求
-                        writer[0].println(request + "\n");
+                        writer[0].println(text);
                     }
                 }else {
                     /*socket = new Socket();
@@ -254,6 +263,7 @@ public class A01_Client {
     }
 
     public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException, UnknownHostException {
-
+        B06_ClientUI clientUI1 = new B06_ClientUI();
+        B06_ClientUI clientUI2 = new B06_ClientUI();
     }
 }

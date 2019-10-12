@@ -54,11 +54,11 @@ public class B_Module2 {
         jPanel.add(buttonPanel1, BorderLayout.SOUTH);
         buttonPanel1.setBackground(Color.pink);
 
-        jButton1 = new JButton("断开连接");
-        jButton2 = new JButton("发送请求");
-        jButton3 = new JButton("删除所选");
+        jButton1 = new JButton("连接");
+        jButton2 = new JButton("请求");
+        jButton3 = new JButton("删除");
         //设置字体
-        Font buttonFont = new Font("隶书", Font.BOLD, 15);
+        Font buttonFont = new Font("隶书", Font.BOLD, 12);
         jButton1.setFont(buttonFont);
         jButton2.setFont(buttonFont);
         jButton3.setFont(buttonFont);

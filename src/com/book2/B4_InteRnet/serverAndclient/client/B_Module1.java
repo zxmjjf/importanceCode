@@ -47,16 +47,16 @@ public class B_Module1 {
         //端口面板
         //1.标签
         JLabel jLabel2 = new JLabel("端口号：");
-        jLabel2.setFont(new Font("隶书", Font.BOLD, 14));
+        jLabel2.setFont(new Font("隶书", Font.BOLD, 11));
         jPaneR.add(jLabel2);
         //2.输入框
-        jTextPort = new JTextField(6);
+        jTextPort = new JTextField(4);
         jPaneR.add(jTextPort);
         //3.距离控制
 
         //3.连接按钮
         jButton = new JButton("link / 链接");
-        jButton.setFont(new Font("隶书", Font.BOLD, 12));
+        jButton.setFont(new Font("隶书", Font.BOLD, 10));
 
         //4.组装
         jPanel.add(jButton, BorderLayout.EAST);

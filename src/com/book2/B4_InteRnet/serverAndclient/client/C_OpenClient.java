@@ -45,7 +45,7 @@ public class C_OpenClient {
             while (socket.isConnected()) {
                 try {
                     /*每隔秒1检测一次*/
-                    Thread.sleep(1000);
+                    Thread.sleep(1500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -90,11 +90,7 @@ public class C_OpenClient {
                     int port = Integer.parseInt(myClient.getB_module1().getjTextPort().getText()); //读取端口
                     //开始连接
                     socket.connect(new InetSocketAddress(address, port), 4000); //超时6s
-                    try {
-                        socket.setSoTimeout(4000);
-                    } catch (SocketException e) {
-                        JOptionPane.showMessageDialog(myClient.getClientFrame(), "数据操作超时", "超时", JOptionPane.ERROR_MESSAGE);
-                    }
+
 
                     /*设置连接成功标记*/
                     connected.set(true);
@@ -109,38 +105,8 @@ public class C_OpenClient {
 
                         /*搭建 客户端——服务器 流*/
                         reader = new Scanner(socket.getInputStream(), StandardCharsets.UTF_8); //接收服务器响应流
+                        System.out.println("搭建输入流");
                         writer = new PrintWriter(socket.getOutputStream(), true, StandardCharsets.UTF_8); //发送请求信息流
-                        /*while (reader.hasNextLine()) {
-                            String ok = reader.nextLine();
-                            if (ok.trim().equals("ok")) {
-                                break;
-                            }
-                            System.out.println(ok);
-                        }*/
-
-                        /*启动线程 客户端请求线程*/
-                        /*new Thread(() -> {
-
-                            boolean done = false;
-                            String request;  //请求信息
-                            while (!done) {
-                                try {
-                                    Thread.sleep(500);
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
-                                }
-                                System.out.print("客户端请求： ");
-                                request = myClient.getB_module2().getList().getSelectedValue();
-                                writer.println(request);
-
-                                if (request.trim().equals("BYE")) {
-                                    done = true;
-                                    System.out.println("ok，请求完毕");
-                                    System.out.println();
-                                }
-                            }
-                        }).start();*/
-
                     }
                 }
 
@@ -157,6 +123,7 @@ public class C_OpenClient {
             /*如果搭建成功则继续注册所有监听事件, 分开注册 */
             //1. 客户端请求界面事件监听程序
             if (connected.get() && !haveListener.get()) {
+                System.out.println("注册事件监听程序");
                 /*断开连接事件监听程序*/
                 myClient.getB_module2().getJButton1().addActionListener(actionEvent -> {
                     /*try {
@@ -183,6 +150,8 @@ public class C_OpenClient {
                         JOptionPane.showMessageDialog(myClient.getClientFrame(), "请先选择要发送的数据！", "未选择数据", JOptionPane.WARNING_MESSAGE);
                     } else {
                         writer.println(request);
+                        System.out.println(request);
+
                         if (request.trim().equals("BYE")) {
                             System.out.println("ok，请求完毕");
                             System.out.println();
@@ -199,16 +168,23 @@ public class C_OpenClient {
             }
 
             //2. 服务器响应界面事件监听程序
+            System.out.println(connected + " " + !haveListener.get());
             if (connected.get() && !haveListener.get()) {
                 /*启动线程 客户端接线程*/
-                new Thread(() ->{
+                Thread getResult = new Thread(() -> {
                     System.out.println("开启服务端监听对接");
-                    //接收服务端响应
+
+                    /*只要有数据可以读，就一直读，而不会一直阻塞*/
                     while (reader.hasNextLine()) {
+                        System.out.println("你倒是打印吖！");
                         String line = reader.nextLine();
                         myClient.getB_module3().getListModel().addElement(line);
                     }
-                }).start();
+                    myClient.getB_module3().getListModel().addElement("收不到恢复了，天啊！");
+                    System.out.println("收不到恢复了，天啊！");
+                });
+
+                getResult.start();
             }
 
             //3. 编辑请求界面事件监听程序
