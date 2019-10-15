@@ -1,9 +1,6 @@
 package com.book2.B4_InteRnet;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
@@ -44,6 +41,7 @@ public class B06_Server {
                             while (!done && in.hasNextLine()) {
                                 //读取客户端请求
                                 String line = in.nextLine();
+
                                 //回应客户端
                                 if (line.trim().equals("BYE")) {
                                     done = true;

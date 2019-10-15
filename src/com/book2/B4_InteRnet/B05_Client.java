@@ -46,9 +46,9 @@ public class B05_Client {
                 }
             }
 
-            //接收服务端响应
             while (reader.hasNextLine()) {
-                String line = reader.nextLine();
+                String line =            //接收服务端响应
+                        reader.nextLine();
                 System.out.println("接收服务端响应： " + line);
             }
 

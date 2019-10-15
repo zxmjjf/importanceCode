@@ -6,6 +6,7 @@ import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.Writer;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;

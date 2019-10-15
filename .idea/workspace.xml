@@ -7,25 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a80cc0b5-fbd0-4627-a7be-96162918c494" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B06_ClientUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B06_Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/LOVE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/LOVE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B07_SocketChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B07_SocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/junkCode/Test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/_总结和反思" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/_总结和反思" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/B05_Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/B05_Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/A01_Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/A01_Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/client/A_MyClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/client/A_MyClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/client/B_Module1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/client/B_Module1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/client/B_Module2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/client/B_Module2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/client/B_Module4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/client/B_Module4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/client/C_OpenClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/serverAndclient/client/C_OpenClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_总结和反思" beforeDir="false" afterPath="$PROJECT_DIR$/src/_总结和反思" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/A01_Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/A01_Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/A_MyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/A_MyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/B_Module1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/B_Module1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/B_Module2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/B_Module2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/B_Module4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/B_Module4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/C_OpenClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/serverAndclient/client/C_OpenClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/B06_ClientUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/B06_ClientUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/B06_Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/importanceCode/com/book2/B4_InteRnet/B06_Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B05_Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B05_Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B06_ClientUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B06_ClientUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B06_Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/book2/B4_InteRnet/B06_Server.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,33 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.B06_ClientUI">
-    <configuration name="B05_Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.book2.B4_InteRnet.B05_Client" />
-      <module name="importanceCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.book2.B4_InteRnet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="B05_Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.book2.B4_InteRnet.B05_Server" />
-      <module name="importanceCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.book2.B4_InteRnet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.B07_SocketChannel">
     <configuration name="B06_ClientUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.book2.B4_InteRnet.B06_ClientUI" />
       <module name="importanceCode" />
@@ -164,12 +130,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C_OpenClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.book2.B4_InteRnet.serverAndclient.client.C_OpenClient" />
+    <configuration name="B07_SocketChannel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.book2.B4_InteRnet.B07_SocketChannel" />
+      <module name="importanceCode" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.book2.B4_InteRnet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="B07_SocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.book2.B4_InteRnet.B07_SocketServer" />
       <module name="importanceCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.book2.B4_InteRnet.serverAndclient.client.*" />
+          <option name="PATTERN" value="com.book2.B4_InteRnet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.junkCode.Test3" />
+      <module name="importanceCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.junkCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,19 +171,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.C_OpenClient" />
-      <item itemvalue="Application.B05_Server" />
-      <item itemvalue="Application.B05_Client" />
       <item itemvalue="Application.B06_ClientUI" />
       <item itemvalue="Application.B06_Server" />
+      <item itemvalue="Application.Test3" />
+      <item itemvalue="Application.B07_SocketServer" />
+      <item itemvalue="Application.B07_SocketChannel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.B07_SocketChannel" />
+        <item itemvalue="Application.B07_SocketServer" />
+        <item itemvalue="Application.Test3" />
         <item itemvalue="Application.B06_ClientUI" />
         <item itemvalue="Application.B06_Server" />
-        <item itemvalue="Application.B05_Server" />
-        <item itemvalue="Application.C_OpenClient" />
-        <item itemvalue="Application.B05_Client" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +240,7 @@
       <workItem from="1570753617600" duration="1319000" />
       <workItem from="1570758693242" duration="15964000" />
       <workItem from="1570799712412" duration="4474000" />
-      <workItem from="1570836581796" duration="7756000" />
+      <workItem from="1570836581796" duration="18663000" />
     </task>
     <task id="LOCAL-00001" summary="A4PrintDate:根据日期打印当月的日历">
       <created>1568184370598</created>
@@ -328,18 +321,53 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/B06_Server.java</url>
-          <line>26</line>
+          <line>23</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/B06_Server.java</url>
-          <line>59</line>
+          <line>57</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/B06_Server.java</url>
-          <line>23</line>
+          <line>20</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/B07_SocketServer.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/B07_SocketServer.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/B07_SocketChannel.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/B07_SocketChannel.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/B07_SocketChannel.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/B07_SocketServer.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/book2/B4_InteRnet/B07_SocketChannel.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
